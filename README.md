@@ -2,7 +2,7 @@
 
 An independent, plain-language reading of the public financial filings of Basics of Sikhi Society (CRA BN 752991695RR0001) and the related Everythings 13 entities in the UK (charity 1143262) and US (EIN 32-0647672).
 
-**[Read the report](index.html)**
+**[Read the report](index.html)** · **[What it means](implications.html)**
 
 ## Key findings
 
