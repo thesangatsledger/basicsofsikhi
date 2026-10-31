@@ -150,7 +150,7 @@ html,body{margin:0;height:100%;background:#120f0d;overflow:hidden}
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const W=1080,H=1920;
 /* scene start times; tuned to the voiceover script (see assets/reel/script.txt) */
-const T=[0,7,14,23,31,38,46,53,60,67];const DUR=T[T.length-1];
+const T=[0,7,14,23,31,38,46,53,60,69];const DUR=T[T.length-1];
 function fit(){const s=Math.min(innerWidth/W,innerHeight/H);$('#stage').style.transform=`translate(-50%,-50%) scale(${s})`;}
 addEventListener('resize',fit);fit();
 

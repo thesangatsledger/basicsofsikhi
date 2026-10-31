@@ -53,3 +53,4 @@ Basics of Sikhi Society, Everythings 13 and Dasvandh Network are invited to resp
 - Explainer animation rig adapted from [Bang Motion](https://github.com/bangtutorial/bang-motion), MIT License.
 - Fonts: Bricolage Grotesque and Caveat, SIL Open Font License 1.1.
 - Libraries: React, ReactDOM, htm (MIT) and GSAP (GSAP Standard License).
+- Reel voiceover: AI-generated with [Kokoro-82M](https://github.com/hexgrad/kokoro) (Apache-2.0), voice "af_heart".

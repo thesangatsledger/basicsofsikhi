@@ -27,3 +27,6 @@ SOFTWARE.
 gsap 3.15.0 - Copyright GreenSock. Used under the GSAP Standard "No Charge" License: https://gsap.com/standard-license
 
 Explainer animation rig adapted from Bang Motion (MIT) - Copyright (c) 2026 Bang Tutorial - https://github.com/bangtutorial/bang-motion
+
+Voiceover: Kokoro-82M (Apache-2.0, hexgrad), q8 ONNX weights; voice "af_heart" from kokoro-js (Apache-2.0).
+Phonemes: phonemizer by Xenova (Apache-2.0, eSpeak NG). Vocabulary: kokoro-onnx config (MIT).
