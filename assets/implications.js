@@ -38,6 +38,7 @@
           ? html`<span><i style=${{ background: 'repeating-linear-gradient(135deg, var(--grid) 0 3px, var(--rule) 3px 6px)' }}></i>Everything else (the charity did not say what)</span>`
           : html`<span><i style=${{ background: 'var(--s-other)' }}></i>Everything else</span>`}
       </div>
+      <p class="plain" style=${{ margin: '0 0 .75rem' }}>Think of 100 coins. Red coins went to people the charity does not name.</p>
       <div class="waffle" role="img" aria-label=${year + ': ' + c + ' of every 100 cents went to unnamed consultants.'}>${cells}</div>
       <p class="readout">In ${year}, <b>${c} cents</b> of every dollar went to consultants nobody is told about.
         ${d.program === null
@@ -123,6 +124,7 @@
       <p class="readout" aria-live="polite">${cur
         ? html`<span><b>${cur.y}</b>: $${fmt(cur.don)} came in${cur.note ? ' (' + cur.note + ')' : ''}. $${fmt(cur.wag)} went to wages.${cur.wag > cur.don ? ' Wages were bigger than donations.' : ''}</span>`
         : html`<span>In 2025, wages ($130,794) were <b>108%</b> of all donations ($120,559). Officers' pay: $0.</span>`}</p>
+      <p class="plain">Blue is money coming in. Red is money paid as wages. In 2025 the red bar is taller: it paid more in wages than donors gave.</p>
       <p class="sub">2023 shows contributions only ($77,349); total 2023 revenue was $101,205. Source: IRS Form 990-EZ (2023, 2025) and 990 (2024).</p>
     </section>`;
   }

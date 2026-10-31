@@ -2,7 +2,7 @@
 
 An independent, plain-language reading of the public financial filings of Basics of Sikhi Society (CRA BN 752991695RR0001) and the related Everythings 13 entities in the UK (charity 1143262) and US (EIN 32-0647672).
 
-**[Read the report](index.html)** · **[What it means](implications.html)**
+**[Read the report](index.html)** · **[What it means](implications.html)** · **[One-minute explainer](explainer.html)**
 
 ## Key findings
 
@@ -18,3 +18,10 @@ Every figure comes from records filed with the CRA, the IRS or the Charity Commi
 **We are not Basics of Sikhi or Everythings 13. We have no affiliation with them.** They did not make or approve this report.
 
 **Right of reply and corrections:** sangatledger@gmail.com. Responses will be published in full.
+
+
+## Credits
+
+- Illustrations: [Microsoft Fluent Emoji](https://github.com/microsoft/fluentui-emoji), MIT License (`assets/illustrations/LICENSE-fluentui-emoji.txt`).
+- Explainer animation rig adapted from [Bang Motion](https://github.com/bangtutorial/bang-motion), MIT License.
+- Libraries: React, ReactDOM, htm (MIT) and GSAP (GSAP Standard License). See `assets/vendor/LICENSES.txt`.
