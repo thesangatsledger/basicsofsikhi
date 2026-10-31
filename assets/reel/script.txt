@@ -1,0 +1,14 @@
+VOICEOVER SCRIPT - "Where does $1 go?" (Instagram reel, 67 seconds)
+Timings match the scene starts in reel.html (const T). Calm, warm, unhurried voice.
+
+[0:00-0:07]  You give a dollar to Basics of Sikhi, to keep Jagraj Singh's work going.
+[0:07-0:14]  Through CanadaHelps, it goes to the charity in Canada.
+[0:14-0:23]  In 2024, ninety-five cents of every dollar it spent went to consultants. The charity doesn't say who they are.
+[0:23-0:31]  How much reached the teaching, the videos, the outreach? Since 2021, the charity hasn't said.
+[0:31-0:38]  In three years, the consultants' share went from seven cents to ninety-five.
+[0:38-0:46]  In the US, its sister charity paid more in wages in 2025 than donors gave.
+[0:46-0:53]  People asked online. The posts were deleted.
+[0:53-1:00]  This isn't a claim that anyone broke the law. It's a fair question. Where does the money go?
+[1:00-1:07]  Every number and every source is at The Sangat's Ledger. We're independent, and not affiliated with Basics of Sikhi.
+
+Sources: CRA T3010 returns, BN 752991695RR0001 (2021-2024); IRS Form 990-EZ, EIN 32-0647672 (2025).
