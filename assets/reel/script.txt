@@ -2,6 +2,8 @@ VOICEOVER - "Where does $1 go?" (Instagram reel, 73 seconds)
 
 Voices: AI-generated with Kokoro-82M (Apache-2.0): "af_heart" (narration) and "am_michael" (disclaimer), speed 0.95.
 Disclose on Instagram: turn on the "AI info" label, or add "AI-generated voice" to the caption.
+Music: background track supplied by the channel owner, mixed about 14 dB under the voice with automatic ducking; final mix -14 LUFS.
+  soundtrack.mp3 = voice + music (used in the reel); voiceover.mp3 = voice only.
 Pronunciation overrides: Jagraj = "jug-raj" (dʒˈʌɡɹɑːdʒ); Sikhi = "SICK-ee"; Sangat's = "SUNG-guts".
 
 [0:00]  You give a dollar to Basics of Sikhi, to keep Jagraj Singh's work going.
