@@ -15,6 +15,6 @@ All figures with sources: [`data/figures.csv`](data/figures.csv).
 
 Every figure comes from records filed with the CRA, the IRS or the Charity Commission for England and Wales. This report alleges no wrongdoing by any person. It asks questions the filings raise.
 
-Not affiliated with Basics of Sikhi, Basics of Sikhi Society or Everythings 13.
+**We are not Basics of Sikhi or Everythings 13. We have no affiliation with them.** They did not make or approve this report.
 
 **Right of reply and corrections:** sangatledger@gmail.com. Responses will be published in full.
