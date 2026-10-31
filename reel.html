@@ -135,6 +135,17 @@ html,body{margin:0;height:100%;background:#120f0d;overflow:hidden}
       <div class="endnote" style="margin-top:28px">Every number, every source.<br>Independent. Not affiliated with<br>Basics of Sikhi or Everythings 13.</div>
     </div>
 
+    <!-- S10 disclaimer card (cx 14940): their logo, shown only to identify the charity discussed -->
+    <div class="end" id="end2" style="left:14500px;top:400px;width:880px">
+      <div class="name" style="position:static;opacity:1;font-size:30px">The charity this video is about</div>
+      <div style="position:relative;width:360px;margin:30px auto 0">
+        <img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo" style="display:block;width:360px;border-radius:24px;box-shadow:0 20px 34px rgba(34,30,27,.25)">
+        <div id="stamp" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-14deg);white-space:nowrap;font:800 54px/1 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:.04em;color:#C8342A;border:7px solid #C8342A;border-radius:14px;padding:12px 20px;background:rgba(244,233,211,.9)">NOT AFFILIATED</div>
+      </div>
+      <div class="endttl" style="margin-top:46px;font-size:76px">We are not<br>Basics of Sikhi.</div>
+      <div class="endnote" style="margin-top:24px">The Sangat's Ledger is not affiliated with<br>Basics of Sikhi or Everythings 13.<br>Their logo is shown only to identify<br>the charity this video discusses.</div>
+    </div>
+
     <div class="cut" id="coin" style="left:640px;top:520px;width:170px;opacity:0"><img src="assets/illustrations/coin.svg" alt=""></div>
     <div id="minis"></div>
   </div>
@@ -150,7 +161,7 @@ html,body{margin:0;height:100%;background:#120f0d;overflow:hidden}
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const W=1080,H=1920;
 /* scene start times; tuned to the voiceover script (see assets/reel/script.txt) */
-const T=[0,7,14,23,31,38,46,53,60,69];const DUR=T[T.length-1];
+const T=[0,7,14,23,31,38,46,53,60,66,73];const DUR=T[T.length-1];
 function fit(){const s=Math.min(innerWidth/W,innerHeight/H);$('#stage').style.transform=`translate(-50%,-50%) scale(${s})`;}
 addEventListener('resize',fit);fit();
 
@@ -273,7 +284,12 @@ home(T[7]+1.6,CX(7));scene(7,{line:'#l8',hand:'#h8'});tl.to(coin,{opacity:0,dura
 /* S9 end card */
 into(T[8]+.6,13000,900,1.3);settle(T[8]+.6,13340,960,1.3);
 tl.fromTo('#end',{opacity:0,y:80},{opacity:1,y:0,duration:.9,ease:'power3.out'},T[8]+.7);
-home(T[8]+1.4,CX(8));breath(T[8]+2.4,DUR,1.03);
+home(T[8]+1.4,CX(8));breath(T[8]+2.4,T[9]-.6,1.03);tl.to('#end',{opacity:0,y:-60,duration:.4,ease:'power2.in'},T[9]-.6);
+/* S10 disclaimer card */
+into(T[9]+.6,14600,900,1.3);settle(T[9]+.6,14940,960,1.3);
+tl.fromTo('#end2',{opacity:0,y:80},{opacity:1,y:0,duration:.9,ease:'power3.out'},T[9]+.6);
+tl.fromTo('#stamp',{opacity:0,scale:2.4},{opacity:1,scale:1,duration:.45,ease:'back.out(2)'},T[9]+1.6);
+home(T[9]+1.3,CX(9));breath(T[9]+2.3,DUR,1.03);
 tl.to({},{duration:.01},DUR);
 
 /* playback: autoplay + loop; R restart, Space pause; ?debug=1 scrub; ?safe=1 shows Instagram UI zones; ?clean=1 holds for export */

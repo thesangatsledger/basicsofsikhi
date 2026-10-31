@@ -1,6 +1,6 @@
-VOICEOVER - "Where does $1 go?" (Instagram reel, 69 seconds)
+VOICEOVER - "Where does $1 go?" (Instagram reel, 73 seconds)
 
-Voice: AI-generated with Kokoro-82M (Apache-2.0), voice "af_heart", speed 0.95.
+Voices: AI-generated with Kokoro-82M (Apache-2.0): "af_heart" (narration) and "am_michael" (disclaimer), speed 0.95.
 Disclose on Instagram: turn on the "AI info" label, or add "AI-generated voice" to the caption.
 Pronunciation overrides: Jagraj = "jug-raj" (dʒˈʌɡɹɑːdʒ); Sikhi = "SICK-ee"; Sangat's = "SUNG-guts".
 
@@ -12,7 +12,10 @@ Pronunciation overrides: Jagraj = "jug-raj" (dʒˈʌɡɹɑːdʒ); Sikhi = "SICK-
 [0:38]  In the United States, its sister charity paid more in wages in 2025 than donors gave.
 [0:46]  People asked online. The posts were deleted.
 [0:53]  This isn't a claim that anyone broke the law. It's a fair question. Where does the money go?
-[1:00]  Every number, and every source, is at The Sangat's Ledger. We're independent, and not affiliated with Basics of Sikhi.
+[1:00]  Every number, and every source, is at The Sangat's Ledger.
+[1:06]  (male voice, am_michael) The Sangat's Ledger is not affiliated with Basics of Sikhi.
+        On screen: Basics of Sikhi logo under "The charity this video is about", stamped NOT AFFILIATED,
+        with the caption that their logo is shown only to identify the charity discussed.
 
 Suggested caption:
 Where does $1 given to Basics of Sikhi go? Their own public filings: in 2024, 95% of the Canadian charity's spending went to consultants it doesn't name. Every number and source: thesangatsledger.github.io/basicsofsikhi
