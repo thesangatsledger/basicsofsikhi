@@ -1,16 +1,17 @@
-# The Sangat's Ledger: Basics of Sikhi Society public filings
+# The Sangat's Ledger: Basics of Sikhi public filings
 
 An independent, plain-language reading of the public financial filings of Basics of Sikhi Society (CRA BN 752991695RR0001) and the related Everythings 13 entities in the UK (charity 1143262) and US (EIN 32-0647672).
 
 **[Read the report](index.html)**
 
-## Key findings (CRA T3010 returns)
+## Key findings
 
-- **94.8%** of Basics of Sikhi Society's 2024 spending (C$97,021 of C$102,334) went to "professional and consulting fees." No consultant is named.
-- The consulting share rose every year: **78.5%** (2022) → **88.3%** (2023) → **94.8%** (2024).
-- For **2021 through 2024** the charity did not report how its spending divided between charitable programs, administration and fundraising.
-- **83%** of 2024 revenue (C$129,221 of C$156,066) came from other registered charities, mostly one (BN 896568417RR0001).
-- Directors were listed as *not* at arm's length in 2018 and as at arm's length in 2019.
+- **Canada:** unnamed "professional and consulting fees" went from **7%** of spending (2021) to **79%**, **88%**, then **95%** (2024: C$97,021 of C$102,334). Program spending stopped being reported in 2021.
+- **US:** in 2025 Everythings 13 spent **$130,794** on wages and benefits against **$120,559** in donations (108%), with officers' pay listed at $0. In 2024, $230,172 of $230,176 was recorded as "government grants."
+- **Dasvandh Network** reported a $39,580 grant (2023) to "EVERYTHINGS13-BASICS OF SIKHI" under a tax ID not in the IRS master file.
+- **UK:** income £623,030 (2025), fundraising costs up 83% since 2023.
+
+All figures with sources: [`data/figures.csv`](data/figures.csv).
 
 Every figure comes from records filed with the CRA, the IRS or the Charity Commission for England and Wales. This report alleges no wrongdoing by any person. It asks questions the filings raise.
 
