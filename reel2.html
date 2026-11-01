@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<!-- Portrait (9:16) reel for Instagram. Animation rig adapted from Bang Motion (MIT) - https://github.com/bangtutorial/bang-motion -->
+<!-- Illustrations: Microsoft Fluent Emoji (MIT). Fonts: Bricolage Grotesque, Caveat (SIL OFL 1.1). -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One name, three charities (reel) | The Sangat's Ledger (independent, not affiliated)</title>
+<style>
+@font-face{font-family:"Bricolage Grotesque";font-weight:700;src:url(assets/fonts/bricolage-grotesque-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-weight:800;src:url(assets/fonts/bricolage-grotesque-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Caveat";font-weight:700;src:url(assets/fonts/caveat-latin-700-normal.woff2) format("woff2")}
+:root{--paper:#F4E9D3;--ink:#221E1B;--orange:#E0611A;--teal:#16867E;--red:#C8342A}
+html,body{margin:0;height:100%;background:#120f0d;overflow:hidden}
+#stage{position:absolute;left:50%;top:50%;width:1080px;height:1920px;overflow:hidden;background:var(--paper);font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--ink)}
+#world{position:absolute;inset:0;transform-origin:0 0;will-change:transform}
+#filters{position:fixed;width:0;height:0;opacity:0;pointer-events:none}
+.paper,.grain{position:absolute;left:-2000px;top:-2000px;width:18000px;height:6000px}
+.paper{background:var(--paper)}
+.grain{opacity:.28;mix-blend-mode:multiply;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .2 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+.stain{position:absolute;border-radius:50%;pointer-events:none;filter:blur(50px)}
+.cut{position:absolute;opacity:0;will-change:transform,filter;filter:drop-shadow(0 26px 34px rgba(34,30,27,.28))}
+.cut img{display:block;width:100%;height:auto}
+.line{position:absolute;width:860px;font-weight:800;font-size:92px;line-height:1.06;letter-spacing:-.02em;color:var(--ink);opacity:0}
+.w{display:inline-block;white-space:nowrap;margin:0 .1em .08em;opacity:0;will-change:transform,opacity}
+.hl{position:relative;display:inline-block;padding:.02em .18em;border-radius:.18em;color:#fff}
+.hl i{position:absolute;inset:0;border-radius:inherit;transform:scaleX(0);transform-origin:0 50%;z-index:-1;background:var(--orange)}
+.hl.t i{background:var(--teal)} .hl.r i{background:var(--red)}
+.name{position:absolute;font-weight:700;font-size:32px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);opacity:0;white-space:nowrap}
+.hand{position:absolute;font-family:"Caveat",cursive;font-weight:700;font-size:58px;color:var(--teal);opacity:0;white-space:nowrap}
+.hand.r{color:var(--red)}
+.ghost{position:absolute;font-weight:800;font-size:330px;line-height:.85;letter-spacing:-.04em;color:rgba(34,30,27,.08);white-space:nowrap;opacity:0}
+.big{position:absolute;font-weight:800;font-size:330px;line-height:1;letter-spacing:-.04em;color:var(--red);opacity:0;font-variant-numeric:tabular-nums;white-space:nowrap}
+.anno *{fill:none;stroke:var(--red);stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+.mini{position:absolute;width:62px;height:62px;opacity:0}
+.mini img{width:100%}
+.shelf{position:absolute;height:22px;border-radius:11px;background:#8a6a46;opacity:0}
+.beam{position:absolute;height:24px;border-radius:12px;background:#5b4630;transform-origin:50% 50%;opacity:0}
+.post{position:absolute;width:300px;padding:20px 24px;border-radius:20px;background:#fff;box-shadow:0 14px 26px rgba(34,30,27,.18);font:600 30px/1.25 system-ui,sans-serif;color:#333;opacity:0}
+.post b{display:block;font-size:22px;color:#888;font-weight:600;margin-bottom:6px}
+.end{position:absolute;opacity:0;text-align:center}
+#endimg{max-width:760px;max-height:620px;display:block;margin:0 auto}
+.endttl{font-weight:800;font-size:96px;line-height:1;letter-spacing:-.02em}
+.endurl{font:700 40px/1.3 system-ui,sans-serif;color:var(--teal)}
+.endnote{font:600 30px/1.4 system-ui,sans-serif;color:rgba(34,30,27,.7)}
+.vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(80% 60% at 50% 45%,transparent 55%,rgba(34,30,27,.16) 100%)}
+/* top label sits below Instagram's top bar; nothing important goes in the bottom 380px or right 140px */
+.bug{position:absolute;left:60px;top:250px;font:600 26px/1.25 system-ui,sans-serif;color:rgba(34,30,27,.75);background:rgba(244,233,211,.88);padding:10px 16px;border-radius:12px;max-width:820px}
+.bug b{color:var(--ink)}
+#dbg{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);display:none;gap:12px;align-items:center;padding:10px 16px;border-radius:14px;background:rgba(14,16,22,.9);color:#cfd5e3;font:13px system-ui;z-index:50}
+#dbg input{width:360px}#dbg span{font-variant-numeric:tabular-nums;min-width:6ch}
+#safe{position:absolute;inset:0;pointer-events:none;display:none}
+#safe i{position:absolute;background:rgba(255,0,0,.18)}
+.logo{position:absolute;opacity:0;filter:drop-shadow(0 22px 30px rgba(34,30,27,.25))}
+.logo img{display:block;width:100%;border-radius:16%}
+.tag{position:absolute;opacity:0;white-space:nowrap;font:700 22px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#C8342A;border:3px solid #C8342A;border-radius:10px;padding:8px 12px;background:rgba(244,233,211,.92)}
+.badge{position:absolute;opacity:0;white-space:nowrap;font:800 30px/1 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:.06em;color:#fff;border-radius:999px;padding:12px 22px}
+.badge.ca{background:#C8342A}.badge.uk{background:#16867E}.badge.us{background:#1f5f99}
+.small{position:absolute;opacity:0;font:600 24px/1.25 system-ui,sans-serif;color:rgba(34,30,27,.75);text-align:center;width:300px}
+.links *{fill:none;stroke:#5b4630;stroke-width:6;stroke-linecap:round;stroke-dasharray:2 16}
+.bar{position:absolute;height:64px;border-radius:12px;transform-origin:0 50%;opacity:0}
+.barlbl{position:absolute;opacity:0;font:700 34px/1.2 system-ui,sans-serif;color:var(--ink);white-space:nowrap}
+.staff{position:absolute;width:74px;opacity:0}
+.staff img{width:100%}
+</style>
+</head>
+<body>
+<svg id="filters" aria-hidden="true"><defs></defs></svg>
+<div id="stage" role="img" aria-label="Portrait animated explainer: how one brand, Basics of Sikhi, runs through three charities in Canada, the UK and the US, according to their public filings. Independent; not affiliated; no one is accused of a crime.">
+  <div id="world">
+    <div class="paper"></div>
+    <div class="stain" style="left:0;top:300px;width:1000px;height:900px;background:rgba(224,97,26,.12)"></div>
+    <div class="stain" style="left:3200px;top:400px;width:1100px;height:900px;background:rgba(200,52,42,.10)"></div>
+    <div class="stain" style="left:8000px;top:400px;width:1100px;height:900px;background:rgba(22,134,126,.10)"></div>
+    <div class="grain"></div>
+
+    <div class="ghost" id="g1" style="left:380px;top:420px">1&rarr;3</div>
+    <div class="logo" id="lg1" style="left:330px;top:520px;width:420px"><img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo (shown to identify the brand; not affiliated)"></div>
+    <div class="tag" id="t1" style="left:332px;top:990px">Not affiliated &middot; shown to identify</div>
+    <div class="hand" id="h1" style="left:80px;top:1120px">one brand you know</div>
+    <div class="line" id="l1" style="left:70px;top:1230px">One name. <span class="hl"><i></i>Three charities.</span></div>
+    <div class="logo" id="lg2" style="left:2050px;top:370px;width:170px"><img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo (shown to identify the brand; not affiliated)"></div>
+    <svg class="links" id="lk2" style="position:absolute;left:1600px;top:530px;width:1080px;height:170px;overflow:visible" viewBox="0 0 1080 200"><path d="M540 20 L210 180"/><path d="M540 20 L540 180"/><path d="M540 20 L870 180"/></svg>
+    <div class="cut" id="b20" style="left:1700px;top:690px;width:220px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge ca" id="bd20" style="left:1720px;top:950px">CANADA</div>
+    <div class="small" id="sm20" style="left:1660px;top:1020px">Basics of Sikhi Society</div>
+    <div class="cut" id="b21" style="left:2030px;top:690px;width:220px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge uk" id="bd21" style="left:2050px;top:950px">UK</div>
+    <div class="small" id="sm21" style="left:1990px;top:1020px">Everythings 13</div>
+    <div class="cut" id="b22" style="left:2360px;top:690px;width:220px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge us" id="bd22" style="left:2380px;top:950px">USA</div>
+    <div class="small" id="sm22" style="left:2320px;top:1020px">Everythings 13</div>
+    <div class="line" id="l2" style="left:1670px;top:1230px">Same brand. <span class="hl t"><i></i>Different names.</span></div>
+    <div class="cut" id="g30" style="left:3290px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
+    <div class="cut" id="m30" style="left:3410px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
+    <div class="small" id="sm30" style="left:3250px;top:880px"><b style="color:#221E1B">CRA</b><br>Canada</div>
+    <div class="cut" id="g31" style="left:3610px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
+    <div class="cut" id="m31" style="left:3730px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
+    <div class="small" id="sm31" style="left:3570px;top:880px"><b style="color:#221E1B">IRS</b><br>United States</div>
+    <div class="cut" id="g32" style="left:3930px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
+    <div class="cut" id="m32" style="left:4050px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
+    <div class="small" id="sm32" style="left:3890px;top:880px"><b style="color:#221E1B">CHARITY COMM.</b><br>England &amp; Wales</div>
+    <div class="hand" id="h3" style="left:3280px;top:1120px">so we put all three side by side</div>
+    <div class="line" id="l3" style="left:3270px;top:1230px">No one sees <span class="hl r"><i></i>the whole picture.</span></div>
+    <div class="badge uk" id="bd4" style="left:4880px;top:420px">UK</div>
+    <div class="cut" id="bag4" style="left:4880px;top:520px;width:260px"><img src="assets/illustrations/money-bag.svg" alt=""></div>
+    <div class="big" id="n4" style="left:5180px;top:560px;font-size:190px;color:#16867E">&pound;623K</div>
+    <div class="staff" id="st0" style="left:4890px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st1" style="left:5010px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st2" style="left:5130px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st3" style="left:5250px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st4" style="left:5370px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st5" style="left:5490px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st6" style="left:4890px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st7" style="left:5010px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st8" style="left:5130px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st9" style="left:5250px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st10" style="left:5370px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st11" style="left:5490px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="hand" id="h4" style="left:4880px;top:1120px">2025 &middot; 12 staff on payroll</div>
+    <div class="line" id="l4" style="left:4870px;top:1230px">The UK arm is <span class="hl t"><i></i>the biggest.</span></div>
+    <div class="cut" id="mega5" style="left:7040px;top:430px;width:260px"><img src="assets/illustrations/megaphone.svg" alt=""></div>
+    <div class="barlbl" id="bl5a" style="left:6480px;top:700px">Income</div>
+    <div class="bar" id="bar5a" style="left:6480px;top:750px;width:52px;background:#16867E"></div>
+    <div class="barlbl" id="bv5a" style="left:6550px;top:760px">+6%</div>
+    <div class="barlbl" id="bl5b" style="left:6480px;top:860px">Cost of raising money</div>
+    <div class="bar" id="bar5b" style="left:6480px;top:910px;width:720px;background:#C8342A"></div>
+    <div class="barlbl" id="bv5b" style="left:7220px;top:920px;color:#C8342A">+83%</div>
+    <div class="hand" id="h5" style="left:6480px;top:1120px">UK &middot; 2023 to 2025</div>
+    <div class="line" id="l5" style="left:6470px;top:1230px">Fundraising costs <span class="hl r"><i></i>+83%.</span></div>
+    <div class="badge us" id="bd6" style="left:8080px;top:420px">USA</div>
+    <div class="cut" id="gov6" style="left:8200px;top:540px;width:380px"><img src="assets/illustrations/government.svg" alt=""></div>
+    <div class="cut" id="q6" style="left:8560px;top:480px;width:200px"><img src="assets/illustrations/question.svg" alt=""></div>
+    <div class="small" id="sm6" style="left:8150px;top:960px;width:780px;font-size:30px">$230,172 of $230,176 raised in 2024</div>
+    <div class="hand" id="h6" style="left:8080px;top:1120px">no government is named</div>
+    <div class="line" id="l6" style="left:8070px;top:1230px">Booked as <span class="hl"><i></i>government grants.</span></div>
+    <div class="badge us" id="bd7" style="left:9680px;top:420px">USA</div>
+    <div class="cut" id="bag7" style="left:9720px;top:620px;width:240px"><img src="assets/illustrations/money-bag.svg" alt=""></div>
+    <div class="cut" id="notes7" style="left:10300px;top:660px;width:230px"><img src="assets/illustrations/money-wings.svg" alt=""></div>
+    <div class="beam" id="beam7" style="left:9730px;top:910px;width:800px"></div>
+    <div class="cut" id="piv7" style="left:10075px;top:885px;width:110px"><img src="assets/illustrations/scale.svg" alt=""></div>
+    <div class="name" id="n7a" style="left:9700px;top:1020px;font-size:26px">Given &middot; $120,559</div>
+    <div class="name" id="n7b" style="left:10160px;top:1020px;font-size:26px">Wages &middot; $130,794</div>
+    <div class="hand" id="h7" style="left:9680px;top:1120px">2025 &middot; savings fell $70,826</div>
+    <div class="line" id="l7" style="left:9670px;top:1230px">Wages beat <span class="hl r"><i></i>donations.</span></div>
+    <div class="badge ca" id="bd8" style="left:11280px;top:420px">CANADA</div>
+    <div class="cut" id="maple8" style="left:11280px;top:520px;width:170px"><img src="assets/illustrations/maple-leaf.svg" alt=""></div>
+    <div class="big" id="n8" style="left:11490px;top:520px;font-size:230px">95&cent;</div>
+    <div class="cut" id="door8" style="left:11530px;top:790px;width:170px"><img src="assets/illustrations/door.svg" alt=""></div>
+    <div class="cut" id="who8" style="left:11720px;top:830px;width:150px"><img src="assets/illustrations/unknown-people.svg" alt=""></div>
+    <div class="cut" id="q8" style="left:11840px;top:760px;width:90px"><img src="assets/illustrations/question.svg" alt=""></div>
+    <div class="hand r" id="h8" style="left:11280px;top:1120px">of every $1 spent &middot; 2024</div>
+    <div class="line" id="l8" style="left:11270px;top:1230px">To consultants it <span class="hl r"><i></i>doesn&rsquo;t name.</span></div>
+    <div class="logo" id="lg9" style="left:13240px;top:420px;width:200px"><img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo (shown to identify the brand; not affiliated)"></div>
+    <div class="tag" id="t9" style="left:13210px;top:640px;font-size:18px">Not affiliated</div>
+    <svg class="links" id="lk9" style="position:absolute;left:12800px;top:700px;width:1080px;height:420px;overflow:visible" viewBox="0 0 1080 420"><path d="M250 110 L830 110"/><path d="M250 150 L540 330"/><path d="M830 150 L540 330"/></svg>
+    <div class="cut" id="c9" style="left:12940px;top:700px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge ca" id="bc9" style="left:12950px;top:900px;font-size:22px">CA</div>
+    <div class="cut" id="u9" style="left:13560px;top:700px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge uk" id="bu9" style="left:13570px;top:900px;font-size:22px">UK</div>
+    <div class="cut" id="s9" style="left:13250px;top:930px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge us" id="bs9" style="left:13390px;top:1010px;font-size:22px">US</div>
+    <div class="cut" id="q9a" style="left:13300px;top:720px;width:90px"><img src="assets/illustrations/question.svg" alt=""></div>
+    <div class="hand" id="h9" style="left:12880px;top:1120px">only they can say</div>
+    <div class="line" id="l9" style="left:12870px;top:1230px">Money between them? <span class="hl t"><i></i>Not shown.</span></div>
+    <div class="end" id="end2" style="left:14500px;top:400px;width:880px">
+      <div class="name" style="position:static;opacity:1;font-size:30px">The brand this video is about</div>
+      <div style="position:relative;width:340px;margin:30px auto 0">
+        <img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo" style="display:block;width:340px;border-radius:24px;box-shadow:0 20px 34px rgba(34,30,27,.25)">
+        <div id="stamp" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-14deg);white-space:nowrap;font:800 52px/1 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:.04em;color:#C8342A;border:7px solid #C8342A;border-radius:14px;padding:12px 20px;background:rgba(244,233,211,.9)">NOT AFFILIATED</div>
+      </div>
+      <div class="endttl" style="margin-top:44px;font-size:66px">Every number, every source:</div>
+      <div class="endurl" style="margin-top:20px">thesangatsledger.github.io<br>/basicsofsikhi</div>
+      <div class="endnote" style="margin-top:22px">The Sangat's Ledger is not affiliated with<br>Basics of Sikhi or Everythings 13. Their logo is<br>shown only to identify the brand discussed.</div>
+    </div>
+  </div>
+  <div class="vig"></div>
+  <div class="bug"><b>The Sangat's Ledger</b> &middot; not affiliated with Basics of Sikhi or Everythings 13 &middot; public records</div>
+  <div id="safe"><i style="left:0;right:0;top:0;height:220px"></i><i style="left:0;right:0;bottom:0;height:380px"></i><i style="right:0;top:220px;bottom:380px;width:140px"></i></div>
+  <div id="dbg"><button id="dPlay">Pause</button><input id="dScrub" type="range" min="0" max="1000" value="0" aria-label="Scrub"><span id="dClock">0.00s</span></div>
+</div>
+<audio id="vo" src="assets/reel2/soundtrack.mp3" preload="auto"></audio>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const W=1080,H=1920;
+/* scene start times; tuned to the voiceover script (see assets/reel/script.txt) */
+const T=[0.0, 6.47, 14.17, 22.39, 30.27, 36.6, 45.53, 53.31, 60.56, 67.91, 74.38];const DUR=T[T.length-1];
+function fit(){const s=Math.min(innerWidth/W,innerHeight/H);$('#stage').style.transform=`translate(-50%,-50%) scale(${s})`;}
+addEventListener('resize',fit);fit();
+
+const defs=$('#filters defs');let fc=0;
+function makeBlur(){const id='mb'+(fc++),NS='http://www.w3.org/2000/svg';const f=document.createElementNS(NS,'filter');f.id=id;
+  f.setAttribute('x','-70%');f.setAttribute('y','-70%');f.setAttribute('width','240%');f.setAttribute('height','240%');
+  const g=document.createElementNS(NS,'feGaussianBlur');g.setAttribute('stdDeviation','0 0');f.appendChild(g);defs.appendChild(f);return {url:`url(#${id})`,node:g};}
+function blurTween(tl,targets,at,from,to,dur,{ease='power3.out',ax=1,ay=.08}={}){const b=makeBlur(),o={v:from};tl.set(targets,{filter:b.url},at);
+  tl.to(o,{v:to,duration:dur,ease,onUpdate(){b.node.setAttribute('stdDeviation',`${(o.v*ax).toFixed(2)} ${(o.v*ay).toFixed(2)}`);}},at);tl.set(targets,{filter:'none'},at+dur);}
+const VERT={ax:.1,ay:1},HORZ={ax:1,ay:.1};
+
+$$('.line').forEach(el=>{const out=[];el.childNodes.forEach(n=>{if(n.nodeType===3){n.textContent.split(/\s+/).filter(Boolean).forEach(w=>{const s=document.createElement('span');s.className='w';s.textContent=w;out.push(s);});}
+  else{const s=document.createElement('span');s.className='w';s.appendChild(n.cloneNode(true));out.push(s);}});el.textContent='';out.forEach(s=>el.appendChild(s));});
+
+const tl=gsap.timeline({paused:true});const rig=$('#world');
+const words=el=>$$('.w',el);
+const say=(sel,at,{dur=.55,st=.08}={})=>{const el=$(sel),ws=words(el);tl.set(el,{opacity:1},at);
+  tl.fromTo(ws,{opacity:0,yPercent:60,scaleY:1.25},{opacity:1,yPercent:0,scaleY:1,duration:dur,ease:'power4.out',stagger:st,immediateRender:false},at);
+  blurTween(tl,el,at,22,0,dur+st*ws.length,VERT);
+  $$('.hl i',el).forEach((h,i)=>tl.fromTo(h,{scaleX:0},{scaleX:1,duration:.4,ease:'power3.out',immediateRender:false},at+st*ws.length+.2+i*.2));};
+const unsay=(sel,at,{dur=.3}={})=>{const el=$(sel),ws=words(el);tl.to(ws,{opacity:0,yPercent:-50,duration:dur,ease:'power2.in',stagger:.02},at);
+  blurTween(tl,el,at,0,30,dur+.1,{ease:'power2.in',...VERT});tl.set(el,{opacity:0},at+dur+.15);};
+const fly=(sel,at,{from={x:0,y:500,rotate:10,scale:.9},dur=.9,ease='power4.out',float=true}={})=>{const el=$(sel);
+  tl.fromTo(el,{opacity:0,...from},{opacity:1,x:0,y:0,rotate:0,scale:1,duration:dur,ease,immediateRender:false},at);
+  blurTween(tl,el,at,34,0,dur*.7,Math.abs(from.x||0)>Math.abs(from.y||0)?HORZ:VERT);
+  if(float)tl.to(el,{y:-22,rotate:1.5,scale:1.03,duration:1.6,ease:'sine.inOut',yoyo:true,repeat:3},at+dur);};
+const draw=(sel,at,dur=.7)=>{const p=$(sel);tl.set(p,{opacity:0},0);tl.set(p,{opacity:1},at);const o={v:0};
+  tl.to(o,{v:1,duration:dur,ease:'power2.inOut',onUpdate(){p.style.clipPath=`inset(-300px ${(1-o.v)*100}% -300px -300px)`;}},at);};
+const label=(sel,at)=>tl.fromTo($(sel),{opacity:0,y:14},{opacity:1,y:0,duration:.4,ease:'power3.out',immediateRender:false},at);
+const unlabel=(sel,at)=>tl.to($(sel),{opacity:0,duration:.25},at);
+const fadeOut=(sels,at)=>sels.forEach(s=>tl.to(s,{opacity:0,duration:.35,ease:'power2.in'},at));
+
+const C={x:540,y:960,z:1};
+function applyCam(){rig.style.transform=`translate(${540-C.x*C.z}px,${960-C.y*C.z}px) scale(${C.z})`;}
+const look=(at,x,y,z,dur=1.6,ease='sine.inOut')=>tl.to(C,{x,y,z,duration:dur,ease,onUpdate:applyCam},at);
+const home=(at,x,y=960,dur=1.1)=>look(at,x,y,1,dur,'power2.inOut');
+const into=(cutAt,x,y,z)=>tl.to(C,{x,y,z,duration:.9,ease:'power2.in',onUpdate:applyCam},cutAt-.9);
+const settle=(cutAt,x,y,z)=>tl.to(C,{x,y,z:z*.94,duration:1.1,ease:'power3.out',onUpdate:applyCam},cutAt);
+const breath=(a,b,z)=>tl.to(C,{z,duration:Math.max(.1,b-a),ease:'sine.inOut',onUpdate:applyCam},a);
+const CX=k=>540+k*1600;
+
+
+const scene=(k,{line,hand,names=[]})=>{const s=T[k],e=T[k+1];say(line,s+2.0);if(hand)label(hand,s+2.8);names.forEach((n,i)=>label(n,s+2.5+i*.2));
+  breath(s+2.0,e-.6,1.03);unsay(line,e-.6);if(hand)unlabel(hand,e-.6);names.forEach(n=>unlabel(n,e-.6));};
+const popIn=(sel,at,d=.5)=>tl.fromTo(sel,{opacity:0,scale:.6},{opacity:1,scale:1,duration:d,ease:'back.out(1.8)',immediateRender:false},at);
+const out=(sels,at)=>sels.forEach(s=>tl.to(s,{opacity:0,duration:.35,ease:'power2.in'},at));
+const go=(k)=>{into(T[k]+.6,CX(k)-340,900,1.4);settle(T[k]+.6,CX(k),880,1.4);home(T[k]+1.3,CX(k));};
+
+/* S1 one name */
+tl.set(C,{x:540,y:760,z:1.5,onUpdate:applyCam},0);
+tl.fromTo('#g1',{opacity:0,y:40},{opacity:1,y:0,duration:1.2,ease:'power2.out'},.2);
+popIn('#lg1',.3,.8);label('#t1',1.4);home(1.0,CX(0));scene(0,{line:'#l1',hand:'#h1'});out(['#g1','#t1'],T[1]-.6);
+/* S2 three bodies */
+go(1);popIn('#lg2',T[1]+.7);draw('#lk2',T[1]+1.1,.9);
+[0,1,2].forEach(j=>{fly('#b2'+j,T[1]+1.3+j*.25,{from:{x:0,y:300,rotate:6-j*6,scale:.9},float:false});popIn('#bd2'+j,T[1]+1.9+j*.25);label('#sm2'+j,T[1]+2.4+j*.25);});
+scene(1,{line:'#l2'});
+/* S3 regulators */
+go(2);[0,1,2].forEach(j=>{fly('#g3'+j,T[2]+.8+j*.25,{from:{x:0,y:300,rotate:0,scale:.9},float:false});fly('#m3'+j,T[2]+1.5+j*.25,{from:{x:200,y:-200,rotate:20,scale:.6}});label('#sm3'+j,T[2]+1.9+j*.25);});
+scene(2,{line:'#l3',hand:'#h3'});
+/* S4 UK biggest */
+go(3);popIn('#bd4',T[3]+.8);fly('#bag4',T[3]+1.0,{from:{x:-300,y:0,rotate:-8,scale:.9}});
+tl.fromTo('#n4',{opacity:0,scale:.7},{opacity:1,scale:1,duration:.6,ease:'back.out(1.6)'},T[3]+1.3);
+for(let j=0;j<12;j++)popIn('#st'+j,T[3]+2.0+j*.07,.4);
+scene(3,{line:'#l4',hand:'#h4'});
+/* S5 fundraising */
+go(4);fly('#mega5',T[4]+.8,{from:{x:300,y:0,rotate:10,scale:.8}});
+label('#bl5a',T[4]+1.2);tl.fromTo('#bar5a',{opacity:1,scaleX:0},{opacity:1,scaleX:1,duration:.8,ease:'power3.out',immediateRender:false},T[4]+1.4);label('#bv5a',T[4]+2.1);
+label('#bl5b',T[4]+2.4);tl.fromTo('#bar5b',{opacity:1,scaleX:0},{opacity:1,scaleX:1,duration:1.6,ease:'power2.out',immediateRender:false},T[4]+2.6);label('#bv5b',T[4]+4.0);
+tl.set(['#bar5a','#bar5b'],{opacity:0},0);
+scene(4,{line:'#l5',hand:'#h5'});
+/* S6 US grants */
+go(5);popIn('#bd6',T[5]+.8);fly('#gov6',T[5]+1.0,{from:{x:0,y:300,rotate:0,scale:.9},float:false});fly('#q6',T[5]+1.6,{from:{x:200,y:-300,rotate:-20,scale:.6}});label('#sm6',T[5]+2.2);
+scene(5,{line:'#l6',hand:'#h6'});
+/* S7 US wages */
+go(6);popIn('#bd7',T[6]+.8);
+tl.fromTo('#beam7',{opacity:0,scaleX:0},{opacity:1,scaleX:1,duration:.8,ease:'power3.out'},T[6]+.8);
+fly('#piv7',T[6]+1.0,{from:{x:0,y:300,rotate:0,scale:.8},float:false});
+fly('#bag7',T[6]+1.2,{from:{x:-400,y:0,rotate:-8,scale:.9},float:false});
+fly('#notes7',T[6]+1.5,{from:{x:400,y:0,rotate:8,scale:.9},float:false});
+tl.to('#beam7',{rotate:3,duration:1.2,ease:'elastic.out(1,.5)'},T[6]+2.8);tl.to('#bag7',{y:-26,duration:1.2,ease:'elastic.out(1,.5)'},T[6]+2.8);tl.to('#notes7',{y:26,duration:1.2,ease:'elastic.out(1,.5)'},T[6]+2.8);
+scene(6,{line:'#l7',hand:'#h7',names:['#n7a','#n7b']});
+/* S8 Canada */
+go(7);popIn('#bd8',T[7]+.8);fly('#maple8',T[7]+1.0,{from:{x:0,y:-300,rotate:-20,scale:.8}});
+const n8=$('#n8'),cv={v:0};tl.fromTo(n8,{opacity:0,scale:.7},{opacity:1,scale:1,duration:.5,ease:'back.out(1.6)'},T[7]+1.2);
+tl.fromTo(cv,{v:0},{v:95,duration:1.6,ease:'power2.out',onUpdate(){n8.textContent=Math.round(cv.v)+'¢';}},T[7]+1.4);
+fly('#door8',T[7]+1.8,{from:{x:300,y:0,rotate:-4,scale:.9},float:false});fly('#who8',T[7]+2.1,{from:{x:0,y:-300,rotate:8,scale:.8}});fly('#q8',T[7]+2.4,{from:{x:0,y:-200,rotate:-20,scale:.6}});
+scene(7,{line:'#l8',hand:'#h8'});
+/* S9 gap */
+go(8);popIn('#lg9',T[8]+.8);label('#t9',T[8]+1.2);
+[['#c9','#bc9'],['#u9','#bu9'],['#s9','#bs9']].forEach(([a,b],j)=>{fly(a,T[8]+1.0+j*.25,{from:{x:0,y:300,rotate:0,scale:.9},float:false});popIn(b,T[8]+1.5+j*.25);});
+draw('#lk9',T[8]+2.0,1.0);fly('#q9a',T[8]+2.8,{from:{x:0,y:-200,rotate:-20,scale:.6}});
+scene(8,{line:'#l9',hand:'#h9'});
+/* S10 disclaimer */
+into(T[9]+.6,CX(9)-340,900,1.3);settle(T[9]+.6,CX(9),960,1.3);
+tl.fromTo('#end2',{opacity:0,y:80},{opacity:1,y:0,duration:.9,ease:'power3.out'},T[9]+.6);
+tl.fromTo('#stamp',{opacity:0,scale:2.4},{opacity:1,scale:1,duration:.45,ease:'back.out(2)'},T[9]+1.5);
+home(T[9]+1.3,CX(9));breath(T[9]+2.3,DUR,1.03);
+tl.to({},{duration:.01},DUR);
+
+/* playback: autoplay + loop; R restart, Space pause; ?debug=1 scrub; ?safe=1 shows Instagram UI zones; ?clean=1 holds for export */
+const q=new URLSearchParams(location.search);if(q.has('safe'))$('#safe').style.display='block';
+const vo=$('#vo');let hasVO=false,audioOn=false;
+vo.addEventListener('loadedmetadata',()=>{hasVO=true;});vo.addEventListener('error',()=>{hasVO=false;});
+function start(){tl.play(0);if(hasVO){vo.currentTime=0;vo.play().then(()=>audioOn=true).catch(()=>{});}}
+tl.eventCallback('onComplete',()=>start());
+gsap.ticker.add(()=>{if(!audioOn||tl.paused())return;if(Math.abs(vo.currentTime-tl.time())>.12)vo.currentTime=tl.time();});
+window.OPENER={W,H,DURATION:DUR,tl,ready:false,seek(t){tl.pause(t,false);applyCam();},play:start};
+addEventListener('keydown',e=>{if(/^[rR]$/.test(e.key))start();if(e.code==='Space'){e.preventDefault();if(tl.paused()){tl.play();if(audioOn)vo.play();}else{tl.pause();vo.pause();}}});
+if(q.has('debug')){const dbg=$('#dbg');dbg.style.display='flex';const sc=$('#dScrub'),ck=$('#dClock');let drag=false;
+  gsap.ticker.add(()=>{if(!drag)sc.value=String(tl.time()/DUR*1000);ck.textContent=tl.time().toFixed(2)+'s';$('#dPlay').textContent=tl.paused()?'Play':'Pause';});
+  sc.addEventListener('input',()=>{drag=true;tl.pause(sc.value/1000*DUR);applyCam();});sc.addEventListener('change',()=>{drag=false;});
+  $('#dPlay').onclick=()=>tl.paused()?tl.play():tl.pause();}
+document.fonts.ready.then(()=>{applyCam();window.OPENER.ready=true;if(q.has('clean'))return;
+  tl.play(0);vo.play().then(()=>{audioOn=true;vo.currentTime=tl.time();}).catch(()=>{const go=()=>{removeEventListener('pointerdown',go);if(hasVO){vo.currentTime=tl.time();vo.play().then(()=>audioOn=true).catch(()=>{});}};addEventListener('pointerdown',go);});});
+</script>
+</body>
+</html>

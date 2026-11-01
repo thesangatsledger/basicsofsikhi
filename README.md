@@ -7,7 +7,8 @@
 **[▶ Read the report](https://thesangatsledger.github.io/basicsofsikhi/)** &nbsp;·&nbsp;
 **[What it means](https://thesangatsledger.github.io/basicsofsikhi/implications.html)** &nbsp;·&nbsp;
 **[One-minute explainer](https://thesangatsledger.github.io/basicsofsikhi/explainer.html)** &nbsp;·&nbsp;
-**[Portrait reel](https://thesangatsledger.github.io/basicsofsikhi/reel.html)**
+**[Portrait reel](https://thesangatsledger.github.io/basicsofsikhi/reel.html)** &nbsp;·&nbsp;
+**[Reel 2: one name, three charities](https://thesangatsledger.github.io/basicsofsikhi/reel2.html)**
 
 <a href="https://thesangatsledger.github.io/basicsofsikhi/"><img src="assets/readme/report-top.jpg" alt="The report: From 7% to 95%, where Basics of Sikhi's money went" width="100%"></a>
 
@@ -32,6 +33,7 @@
 
 - **[Landscape explainer](https://thesangatsledger.github.io/basicsofsikhi/explainer.html)**: plays in the browser, no sound needed.
 - **[Portrait reel](https://thesangatsledger.github.io/basicsofsikhi/reel.html)** for phones and Instagram. Download the video: **[where-does-1-go-reel.mp4](https://thesangatsledger.github.io/basicsofsikhi/assets/reel/where-does-1-go-reel.mp4)**.
+- **[Reel 2: one name, three charities](https://thesangatsledger.github.io/basicsofsikhi/reel2.html)**: how the brand runs through charities in Canada, the UK and the US. Download: **[one-name-three-charities-reel.mp4](https://thesangatsledger.github.io/basicsofsikhi/assets/reel2/one-name-three-charities-reel.mp4)**.
 
 ## Check it yourself
 
