@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<!-- Instagram carousel source (10 slides, 1080x1350). Rendered to PNG by screenshotting each .slide. -->
+<!-- Illustrations: Microsoft Fluent Emoji (MIT). Fonts: Bricolage Grotesque, Caveat (SIL OFL 1.1). -->
+<head>
+<meta charset="utf-8">
+<title>Carousel: where your Dasvandh goes | The Sangat's Ledger (independent, not affiliated)</title>
+<style>
+@font-face{font-family:"Bricolage Grotesque";font-weight:700;src:url(assets/fonts/bricolage-grotesque-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-weight:800;src:url(assets/fonts/bricolage-grotesque-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Caveat";font-weight:700;src:url(assets/fonts/caveat-latin-700-normal.woff2) format("woff2")}
+:root{--paper:#F4E9D3;--ink:#221E1B;--orange:#E0611A;--teal:#16867E;--red:#C8342A;--blue:#1f5f99;--muted:rgba(34,30,27,.68)}
+*{box-sizing:border-box}
+body{margin:0;background:#2a2622;display:flex;flex-direction:column;align-items:center;gap:40px;padding:40px 0}
+.slide{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--paper);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;padding:110px 80px 0}
+.slide::before{content:"";position:absolute;inset:0;opacity:.28;mix-blend-mode:multiply;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .2 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+.slide.dark{background:#1d1a17;color:#F4E9D3}
+.slide.dark .foot,.slide.dark .src{color:rgba(244,233,211,.62)}
+.slide>*{position:relative}
+.foot{position:absolute;left:80px;right:80px;bottom:46px;display:flex;justify-content:space-between;font:600 22px/1.3 system-ui,sans-serif;color:var(--muted)}
+.foot b{color:inherit;font-weight:800}
+.kicker{font:800 26px/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+h1{font-weight:800;font-size:112px;line-height:.98;letter-spacing:-.03em;margin:22px 0 0}
+h2{font-weight:800;font-size:84px;line-height:1.02;letter-spacing:-.025em;margin:22px 0 0}
+p.lead{font:600 38px/1.32 system-ui,sans-serif;margin:30px 0 0;color:inherit;max-width:900px}
+.hl{display:inline-block;padding:0 .16em;border-radius:.16em;color:#fff;background:var(--orange)}
+.hl.r{background:var(--red)}.hl.t{background:var(--teal)}.hl.b{background:var(--blue)}
+.hand{font-family:"Caveat",cursive;font-weight:700;font-size:54px;color:var(--teal)}
+.hand.r{color:var(--red)}
+.src{position:absolute;left:80px;right:80px;bottom:110px;font:600 24px/1.35 system-ui,sans-serif;color:var(--muted)}
+.tag{display:inline-block;font:800 24px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--red);border:4px solid var(--red);border-radius:12px;padding:10px 16px;background:rgba(244,233,211,.95)}
+.logo{border-radius:16%;box-shadow:0 22px 34px rgba(0,0,0,.28);display:block}
+.card{background:#fff;border-radius:22px;box-shadow:0 14px 28px rgba(34,30,27,.16);padding:14px;display:flex;align-items:center;justify-content:center}
+.card img{max-width:100%;max-height:100%;display:block}
+.flag{width:120px;border-radius:8px;box-shadow:0 8px 18px rgba(34,30,27,.25);display:block}
+.ill{display:block}
+.mega{font-weight:800;font-size:420px;line-height:.85;letter-spacing:-.05em;color:var(--red)}
+.bars{display:flex;align-items:flex-end;gap:34px;height:520px;margin-top:40px}
+.bars div{flex:1;background:var(--red);border-radius:10px 10px 0 0;position:relative}
+.bars div span{position:absolute;top:-62px;left:0;right:0;text-align:center;font:800 46px/1 "Bricolage Grotesque",sans-serif;color:var(--ink)}
+.bars div em{position:absolute;bottom:-56px;left:0;right:0;text-align:center;font:700 32px/1 system-ui,sans-serif;font-style:normal;color:var(--muted)}
+.row{display:flex;align-items:center;gap:28px}
+.stat{background:#fff;border-radius:20px;padding:26px 30px;box-shadow:0 12px 24px rgba(34,30,27,.12)}
+.stat b{display:block;font:800 76px/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.stat span{display:block;margin-top:10px;font:600 28px/1.3 system-ui,sans-serif;color:var(--muted)}
+.q{display:flex;gap:20px;align-items:flex-start;font:700 40px/1.25 system-ui,sans-serif;margin-top:26px}
+.q i{flex:none;width:58px;height:58px;border-radius:50%;background:var(--red);color:#fff;font:800 32px/58px system-ui,sans-serif;text-align:center;font-style:normal}
+.post{background:#fff;color:#333;border-radius:20px;padding:22px 26px;box-shadow:0 14px 26px rgba(34,30,27,.18);font:600 32px/1.3 system-ui,sans-serif;width:520px}
+.post b{display:block;font-size:24px;color:#888;margin-bottom:6px}
+.post s{text-decoration-color:var(--red);text-decoration-thickness:4px}
+.swipe{display:inline-block;margin-top:44px;font:800 34px/1 system-ui,sans-serif;background:var(--ink);color:var(--paper);padding:20px 30px;border-radius:999px}
+</style>
+</head>
+<body>
+
+<!-- 1 HOOK -->
+<section class="slide dark" id="s1">
+  <div class="kicker" style="color:#f0a39e">Public filings &middot; Canada &middot; UK &middot; US</div>
+  <h1 style="font-size:124px;margin-top:30px">Got the balls to read where your <span class="hl r">Dasvandh</span> goes?</h1>
+  <div class="row" style="margin-top:60px;align-items:flex-end">
+    <div style="position:relative">
+      <img class="logo" src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo" style="width:300px">
+      <div class="tag" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-12deg);white-space:nowrap">Not affiliated</div>
+    </div>
+    <div>
+      <p class="lead" style="margin:0;max-width:560px;color:#F4E9D3">Every number in the next 9 slides comes from their <b>own</b> government filings.</p>
+      <div class="swipe" style="background:#F4E9D3;color:#1d1a17">Swipe &rarr;</div>
+    </div>
+  </div>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; not affiliated with Basics of Sikhi or Everythings 13</span><span>1/10</span></div>
+</section>
+
+<!-- 2 STRUCTURE -->
+<section class="slide" id="s2">
+  <div class="kicker">How it's set up</div>
+  <h2>One brand. <span class="hl t">Three charities.</span> Three countries.</h2>
+  <div class="card" style="margin-top:46px;height:200px"><img src="assets/reel2/logos/e13-banner.png" alt="Everythings 13 logo"></div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px">
+    <div class="stat" style="text-align:center"><img class="flag" src="assets/reel2/flags/ca.svg" alt="" style="margin:0 auto"><span style="color:var(--ink);font-weight:800;font-size:30px">Basics of Sikhi Society</span><span>Canada &middot; reports to CRA</span></div>
+    <div class="stat" style="text-align:center"><img class="flag" src="assets/reel2/flags/gb.svg" alt="" style="margin:0 auto"><span style="color:var(--ink);font-weight:800;font-size:30px">Everythings 13</span><span>UK &middot; Charity Commission</span></div>
+    <div class="stat" style="text-align:center"><img class="flag" src="assets/reel2/flags/us.svg" alt="" style="margin:0 auto"><span style="color:var(--ink);font-weight:800;font-size:30px">Everythings 13</span><span>US &middot; reports to IRS</span></div>
+  </div>
+  <p class="lead" style="font-size:34px">Its US tax return lists the projects under the banner: Basics of Sikhi, Sikh Press Association, Mighty Khalsa, Kiddie Sangat. <b>No single regulator sees all three.</b></p>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; logos shown only to identify &middot; not affiliated</span><span>2/10</span></div>
+</section>
+
+<!-- 3 95 CENTS -->
+<section class="slide" id="s3">
+  <div class="row" style="gap:18px"><img class="flag" src="assets/reel2/flags/ca.svg" alt="" style="width:90px"><div class="kicker">Canada &middot; 2024</div></div>
+  <div class="mega" style="margin-top:60px">95&cent;</div>
+  <h2 style="font-size:76px;margin-top:40px">of every $1 the charity spent went to <span class="hl r">consultants it doesn't name.</span></h2>
+  <p class="lead">C$97,021 of C$102,334. No names. No description of the work.</p>
+  <div class="src">Source: CRA T3010, Basics of Sikhi Society, BN 752991695RR0001, 2024, lines 4860 and 5100.</div>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; public records</span><span>3/10</span></div>
+</section>
+
+<!-- 4 TREND -->
+<section class="slide" id="s4">
+  <div class="row" style="gap:18px"><img class="flag" src="assets/reel2/flags/ca.svg" alt="" style="width:90px"><div class="kicker">Canada &middot; share to consultants</div></div>
+  <h2><span class="hl">7&cent;</span> to <span class="hl r">95&cent;</span> in three years.</h2>
+  <div class="bars" style="margin-top:110px">
+    <div style="height:7%;background:var(--teal)"><span>7%</span><em>2021</em></div>
+    <div style="height:79%"><span>79%</span><em>2022</em></div>
+    <div style="height:88%"><span>88%</span><em>2023</em></div>
+    <div style="height:95%"><span>95%</span><em>2024</em></div>
+  </div>
+  <div class="src" style="bottom:110px">Share of total spending (line 5100) paid as professional and consulting fees (line 4860). Source: CRA T3010 returns 2021&ndash;2024.</div>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; public records</span><span>4/10</span></div>
+</section>
+
+<!-- 5 PROGRAMS -->
+<section class="slide" id="s5">
+  <div class="row" style="gap:18px"><img class="flag" src="assets/reel2/flags/ca.svg" alt="" style="width:90px"><div class="kicker">Canada &middot; since 2021</div></div>
+  <h2>How much went to the actual work? <span class="hl t">Not reported.</span></h2>
+  <div class="row" style="margin-top:60px;gap:40px">
+    <img class="ill" src="assets/illustrations/books.svg" alt="" style="width:200px;opacity:.4;filter:grayscale(1)">
+    <img class="ill" src="assets/illustrations/video-camera.svg" alt="" style="width:200px;opacity:.4;filter:grayscale(1)">
+    <img class="ill" src="assets/illustrations/question.svg" alt="" style="width:230px">
+  </div>
+  <p class="lead">The teaching. The videos. The outreach. The charity reported its program spending up to 2020. From 2021 &mdash; the year the consultant money took off &mdash; it left that line blank. Four years running.</p>
+  <div class="src">Source: CRA T3010 returns 2018&ndash;2024, line 5000 (charitable programs). Blank is not zero; it means the charity didn't say.</div>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; public records</span><span>5/10</span></div>
+</section>
+
+<!-- 6 UK -->
+<section class="slide" id="s6">
+  <div class="row" style="gap:18px"><img class="flag" src="assets/reel2/flags/gb.svg" alt="" style="width:110px"><div class="kicker" style="color:var(--teal)">United Kingdom &middot; Everythings 13</div></div>
+  <h2>The biggest arm. <span class="hl t">&pound;623,030</span> last year.</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px">
+    <div class="stat"><b style="color:var(--teal)">12</b><span>staff on its payroll</span></div>
+    <div class="stat"><b>&pound;86,672</b><span>spent raising money in 2025</span></div>
+    <div class="stat"><b style="color:var(--red)">+83%</b><span>rise in fundraising costs, 2023&rarr;2025</span></div>
+    <div class="stat"><b>+6%</b><span>rise in income over the same two years</span></div>
+  </div>
+  <p class="lead">The UK arm runs a payroll. The Canadian arm pays almost everything to unnamed consultants.</p>
+  <div class="src">Source: Charity Commission for England and Wales, charity 1143262, annual returns 2023&ndash;2025.</div>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; public records</span><span>6/10</span></div>
+</section>
+
+<!-- 7 US GRANTS -->
+<section class="slide" id="s7">
+  <div class="row" style="gap:18px"><img class="flag" src="assets/reel2/flags/us.svg" alt="" style="width:110px"><div class="kicker" style="color:var(--blue)">United States &middot; 2024</div></div>
+  <h2><span class="hl b">$230,172</span> of $230,176 booked as &ldquo;government grants.&rdquo;</h2>
+  <div class="row" style="margin-top:50px;gap:30px">
+    <img class="ill" src="assets/illustrations/government.svg" alt="" style="width:300px">
+    <img class="ill" src="assets/illustrations/question.svg" alt="" style="width:200px">
+  </div>
+  <p class="lead">Which government? The return doesn't say. Only <b>$4</b> came from anyone else. The usual explanation, a pandemic wage refund, doesn't fit: 2021 wages were just $7,247.</p>
+  <div class="src">Source: IRS Form 990, Everythings 13, EIN 32-0647672, tax year 2024, Part VIII line 1e.</div>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; public records</span><span>7/10</span></div>
+</section>
+
+<!-- 8 US WAGES -->
+<section class="slide" id="s8">
+  <div class="row" style="gap:18px"><img class="flag" src="assets/reel2/flags/us.svg" alt="" style="width:110px"><div class="kicker" style="color:var(--blue)">United States &middot; 2025</div></div>
+  <h2>Wages were <span class="hl r">bigger than</span> every donation.</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px">
+    <div class="stat"><b style="color:var(--red)">$130,794</b><span>wages and benefits</span></div>
+    <div class="stat"><b>$120,559</b><span>everything donors gave</span></div>
+    <div class="stat"><b>$0</b><span>paid to officers, it says</span></div>
+    <div class="stat"><b style="color:var(--red)">&minus;$70,826</b><span>drop in savings in one year</span></div>
+  </div>
+  <p class="lead">So who got the wages? The return doesn't have to say &mdash; it only names people paid over $100,000.</p>
+  <div class="src">Source: IRS Form 990-EZ, Everythings 13, EIN 32-0647672, tax year 2025 (filed May 14, 2026).</div>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; public records</span><span>8/10</span></div>
+</section>
+
+<!-- 9 DELETED -->
+<section class="slide" id="s9">
+  <div class="kicker">What happened when people asked</div>
+  <h2>People asked. <span class="hl r">The posts were deleted.</span></h2>
+  <div style="position:relative;height:560px;margin-top:40px">
+    <div class="post" style="position:absolute;left:0;top:0;transform:rotate(-3deg)"><b>r/Sikh</b><s>Where do the donations actually go?</s></div>
+    <div class="post" style="position:absolute;left:300px;top:170px;transform:rotate(2deg)"><b>r/Sikhpolitics</b><s>CRA filings: 95% to consultants?</s></div>
+    <div class="post" style="position:absolute;left:40px;top:340px;transform:rotate(-1deg)"><b>comment</b><s>Here are the public numbers&hellip;</s></div>
+    <img class="ill" src="assets/illustrations/wastebasket.svg" alt="" style="position:absolute;right:0;bottom:0;width:240px">
+  </div>
+  <p class="lead">No names. No accusations. Just their own filings. One comment was gone within minutes. No one from the charities has answered.</p>
+  <div class="foot"><span><b>The Sangat's Ledger</b> &middot; public records</span><span>9/10</span></div>
+</section>
+
+<!-- 10 CLOSE -->
+<section class="slide dark" id="s10">
+  <h2 style="font-size:96px">Is this where you thought your money went?</h2>
+  <p class="lead" style="color:#F4E9D3;font-size:34px">We're not saying anyone broke the law. We're saying you can't see where the money goes &mdash; and only they can show you.</p>
+  <div class="q"><i>1</i><span>Who are the consultants, and are any of them tied to the board?</span></div>
+  <div class="q"><i>2</i><span>How much actually reached the teaching, videos and outreach?</span></div>
+  <div class="q"><i>3</i><span>Who does the work, and who gets paid where, across all three?</span></div>
+  <div class="row" style="margin-top:50px;gap:30px">
+    <div class="swipe" style="background:#F4E9D3;color:#1d1a17;margin:0;white-space:nowrap">Every source: link in bio</div>
+    <div class="hand" style="color:#7fd6cd;font-size:46px;white-space:nowrap">send it to someone who gives</div>
+  </div>
+  <div class="src" style="bottom:100px">Independent. The Sangat's Ledger is not affiliated with Basics of Sikhi, Everythings 13 or their projects. Logos shown only to identify the organizations discussed. Corrections: sangatledger@gmail.com</div>
+  <div class="foot"><span><b>The Sangat's Ledger</b></span><span>10/10</span></div>
+</section>
+
+</body>
+</html>
