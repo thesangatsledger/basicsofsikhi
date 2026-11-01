@@ -1,46 +1,50 @@
-VOICEOVER - "One name, three charities" (Instagram reel #2, 74 seconds)
+VOICEOVER - "One name, three charities" (Instagram reel #2, 83 seconds)
 
 Voices: AI-generated with Kokoro-82M (Apache-2.0): "af_heart" (narration) and "am_michael" (disclaimer), speed 1.08.
+Pronunciation overrides: Sikhi = "SICK-ee"; Sikh = "sick"; Sangat = "SUNG-gut".
 Music: same background track as reel #1, ducked about 14 dB under the voice; final mix -14 LUFS.
   soundtrack.mp3 = voice + music (used in the reel); voiceover.mp3 = voice only.
-Logo: the Basics of Sikhi logo appears only to identify the brand. A "not affiliated" label sits at the top of
-  every frame, the logo carries a NOT AFFILIATED tag when it first appears and in the 'money between them' scene,
-  and the reel ends on a disclaimer card stamped NOT AFFILIATED with a spoken disclaimer.
+Logos: the Basics of Sikhi and Everythings 13 logos, and the four project logos, appear only to identify the
+  organizations discussed. A "not affiliated" label sits at the top of every frame, the Basics of Sikhi and
+  Everythings 13 logos carry NOT AFFILIATED tags, and the reel ends on a stamped disclaimer card with a spoken
+  disclaimer. The four projects are those named in Everythings 13's own US Form 990 mission statement.
+Flags: Canada, United Kingdom and United States flags drawn as simple SVGs for this project.
 
 [0:00]  Basics of Sikhi is one name. But behind it are three separate charities, in three countries.
 [0:06]  In Canada, it's Basics of Sikhi Society. In the UK and the United States, it's called Everythings 13.
-[0:14]  Each one reports to a different government. So no single regulator sees the whole picture. We put all three side by side.
-[0:22]  The UK charity is the biggest. Six hundred and twenty-three thousand pounds last year, with twelve staff on its payroll.
-[0:30]  In two years, its cost of raising money went up eighty-three percent. Its income went up six.
-[0:36]  In the United States, almost every dollar raised in 2024 was recorded as a government grant. No government is named.
-[0:45]  In 2025, it paid more in wages than donors gave, and its savings fell by seventy thousand dollars.
-[0:53]  And Canada? Almost no staff pay. Ninety-five cents of every dollar spent went to consultants it doesn't name.
-[1:00]  No filing shows money moving between the three. So who does the work, and who gets paid where? Only they can say.
-[1:07]  (male voice, am_michael) The Sangat's Ledger is not affiliated with Basics of Sikhi, or Everythings 13.
+[0:14]  Everythings 13's own US tax return lists the projects under its banner: Basics of Sikhi, the Sikh Press Association, Mighty Khalsa, and Kiddie Sangat.
+[0:25]  Each one reports to a different government, so no single regulator sees the whole picture.
+[0:31]  The UK charity is the biggest. Six hundred and twenty-three thousand pounds last year, with twelve staff on its payroll.
+[0:39]  In two years, its cost of raising money went up eighty-three percent. Its income went up six.
+[0:45]  In the United States, almost every dollar raised in 2024 was recorded as a government grant. No government is named.
+[0:54]  In 2025, it paid more in wages than donors gave, and its savings fell by seventy thousand dollars.
+[1:02]  And Canada? Almost no staff pay. Ninety-five cents of every dollar spent went to consultants it doesn't name.
+[1:09]  No filing shows money moving between the three. Only they can say who does the work, and who gets paid where.
+[1:16]  (male voice, am_michael) The Sangat's Ledger is not affiliated with Basics of Sikhi, or Everythings 13.
 
-On screen (short versions): One name. Three charities. / Same brand. Different names. / No one sees the whole picture. /
-The UK arm is the biggest. / Fundraising costs +83%. / Booked as government grants. / Wages beat donations. /
-To consultants it doesn't name. / Money between them? Not shown.
+On screen (short versions): One name. Three charities. / Same brand. Different names. / One banner. Four projects. /
+No one sees the whole picture. / The UK arm is the biggest. / Fundraising costs +83%. / Booked as government grants. /
+Wages beat donations. / To consultants it doesn't name. / Money between them? Not shown.
 
 Suggested caption:
 One name. Three charities. Three countries. 🇨🇦🇬🇧🇺🇸
 
-Basics of Sikhi is one brand, but its money runs through three separate charities: Basics of Sikhi Society in Canada, and Everythings 13 in the UK and the US. Each reports to a different government, so no single regulator sees the whole picture.
+Basics of Sikhi is one brand, but its money runs through three separate charities: Basics of Sikhi Society in Canada, and Everythings 13 in the UK and the US. Everythings 13's own US tax return lists the projects under its banner: Basics of Sikhi, the Sikh Press Association, Mighty Khalsa and Kiddie Sangat.
 
-We put their public filings side by side:
+Each charity reports to a different government, so no single regulator sees the whole picture. We put their public filings side by side:
 
 🇬🇧 UK: the biggest. £623,030 last year, 12 staff on payroll. Fundraising costs up 83% in two years, income up 6%.
 🇺🇸 US: $230,172 of $230,176 raised in 2024 was recorded as "government grants." No government is named.
 🇺🇸 US: in 2025, it paid more in wages ($130,794) than donors gave ($120,559).
 🇨🇦 Canada: almost no staff pay. 95¢ of every dollar spent in 2024 went to consultants it doesn't name.
 
-No filing shows money moving between the three. So who does the work, and who gets paid where? Only they can say.
+No filing shows money moving between the three. Only they can say who does the work, and who gets paid where.
 
 🔗 Every number and every source: link in bio
 
-Independent. Not affiliated with Basics of Sikhi or Everythings 13. Their logo is shown only to identify the brand discussed. No one is accused of a crime. AI-generated voice.
+Independent. Not affiliated with Basics of Sikhi, Everythings 13 or their projects. Logos are shown only to identify the organizations discussed. No one is accused of a crime. AI-generated voice.
 
 #Sikh #Sikhi #Sangat #Dasvandh #CharityTransparency #WhereDoesTheMoneyGo #SikhCommunity #Accountability #Canada #UK
 
-Sources: CRA T3010 returns, BN 752991695RR0001 (2021-2024); IRS Form 990 (2024) and 990-EZ (2025), EIN 32-0647672;
-Charity Commission for England and Wales, charity 1143262, annual returns 2023-2025.
+Sources: CRA T3010 returns, BN 752991695RR0001 (2021-2024); IRS Form 990 (2024, incl. mission statement) and 990-EZ (2025),
+EIN 32-0647672; Charity Commission for England and Wales, charity 1143262, annual returns 2023-2025.

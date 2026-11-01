@@ -62,6 +62,13 @@ html,body{margin:0;height:100%;background:#120f0d;overflow:hidden}
 .barlbl{position:absolute;opacity:0;font:700 34px/1.2 system-ui,sans-serif;color:var(--ink);white-space:nowrap}
 .staff{position:absolute;width:74px;opacity:0}
 .staff img{width:100%}
+.badge img{height:30px;width:auto;vertical-align:-5px;margin-right:12px;border-radius:4px;box-shadow:0 0 0 2px rgba(255,255,255,.8)}
+.flag{position:absolute;opacity:0;border-radius:8px;box-shadow:0 10px 22px rgba(34,30,27,.25);overflow:hidden;line-height:0}
+.flag img{display:block;width:100%;height:auto}
+.card{position:absolute;opacity:0;background:#fff;border-radius:22px;box-shadow:0 16px 30px rgba(34,30,27,.18);padding:16px;display:flex;align-items:center;justify-content:center}
+.card img{display:block;max-width:100%;max-height:100%}
+.brk *{fill:none;stroke:#221E1B;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.src{position:absolute;opacity:0;font:600 24px/1.3 system-ui,sans-serif;color:rgba(34,30,27,.7);width:900px}
 </style>
 </head>
 <body>
@@ -76,94 +83,109 @@ html,body{margin:0;height:100%;background:#120f0d;overflow:hidden}
 
     <div class="ghost" id="g1" style="left:380px;top:420px">1&rarr;3</div>
     <div class="logo" id="lg1" style="left:330px;top:520px;width:420px"><img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo (shown to identify the brand; not affiliated)"></div>
-    <div class="tag" id="t1" style="left:332px;top:990px">Not affiliated &middot; shown to identify</div>
-    <div class="hand" id="h1" style="left:80px;top:1120px">one brand you know</div>
+    <div class="tag" id="t1" style="left:332px;top:960px">Not affiliated &middot; shown to identify</div>
+    <div class="flag" id="f1a" style="left:250px;top:1020px;width:150px"><img src="assets/reel2/flags/ca.svg" alt=""></div>
+    <div class="flag" id="f1b" style="left:465px;top:1020px;width:150px"><img src="assets/reel2/flags/gb.svg" alt=""></div>
+    <div class="flag" id="f1c" style="left:680px;top:1020px;width:150px"><img src="assets/reel2/flags/us.svg" alt=""></div>
+    <div class="hand" id="h1" style="left:80px;top:1130px">one brand you know</div>
     <div class="line" id="l1" style="left:70px;top:1230px">One name. <span class="hl"><i></i>Three charities.</span></div>
     <div class="logo" id="lg2" style="left:2050px;top:370px;width:170px"><img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo (shown to identify the brand; not affiliated)"></div>
     <svg class="links" id="lk2" style="position:absolute;left:1600px;top:530px;width:1080px;height:170px;overflow:visible" viewBox="0 0 1080 200"><path d="M540 20 L210 180"/><path d="M540 20 L540 180"/><path d="M540 20 L870 180"/></svg>
     <div class="cut" id="b20" style="left:1700px;top:690px;width:220px"><img src="assets/illustrations/office.svg" alt=""></div>
-    <div class="badge ca" id="bd20" style="left:1720px;top:950px">CANADA</div>
+    <div class="badge ca" id="bd20" style="left:1690px;top:950px"><img src="assets/reel2/flags/ca.svg" alt="">CANADA</div>
     <div class="small" id="sm20" style="left:1660px;top:1020px">Basics of Sikhi Society</div>
     <div class="cut" id="b21" style="left:2030px;top:690px;width:220px"><img src="assets/illustrations/office.svg" alt=""></div>
-    <div class="badge uk" id="bd21" style="left:2050px;top:950px">UK</div>
+    <div class="badge uk" id="bd21" style="left:2020px;top:950px"><img src="assets/reel2/flags/gb.svg" alt="">UK</div>
     <div class="small" id="sm21" style="left:1990px;top:1020px">Everythings 13</div>
     <div class="cut" id="b22" style="left:2360px;top:690px;width:220px"><img src="assets/illustrations/office.svg" alt=""></div>
-    <div class="badge us" id="bd22" style="left:2380px;top:950px">USA</div>
+    <div class="badge us" id="bd22" style="left:2350px;top:950px"><img src="assets/reel2/flags/us.svg" alt="">USA</div>
     <div class="small" id="sm22" style="left:2320px;top:1020px">Everythings 13</div>
     <div class="line" id="l2" style="left:1670px;top:1230px">Same brand. <span class="hl t"><i></i>Different names.</span></div>
-    <div class="cut" id="g30" style="left:3290px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
-    <div class="cut" id="m30" style="left:3410px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
-    <div class="small" id="sm30" style="left:3250px;top:880px"><b style="color:#221E1B">CRA</b><br>Canada</div>
-    <div class="cut" id="g31" style="left:3610px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
-    <div class="cut" id="m31" style="left:3730px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
-    <div class="small" id="sm31" style="left:3570px;top:880px"><b style="color:#221E1B">IRS</b><br>United States</div>
-    <div class="cut" id="g32" style="left:3930px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
-    <div class="cut" id="m32" style="left:4050px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
-    <div class="small" id="sm32" style="left:3890px;top:880px"><b style="color:#221E1B">CHARITY COMM.</b><br>England &amp; Wales</div>
-    <div class="hand" id="h3" style="left:3280px;top:1120px">so we put all three side by side</div>
-    <div class="line" id="l3" style="left:3270px;top:1230px">No one sees <span class="hl r"><i></i>the whole picture.</span></div>
-    <div class="badge uk" id="bd4" style="left:4880px;top:420px">UK</div>
-    <div class="cut" id="bag4" style="left:4880px;top:520px;width:260px"><img src="assets/illustrations/money-bag.svg" alt=""></div>
-    <div class="big" id="n4" style="left:5180px;top:560px;font-size:190px;color:#16867E">&pound;623K</div>
-    <div class="staff" id="st0" style="left:4890px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st1" style="left:5010px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st2" style="left:5130px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st3" style="left:5250px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st4" style="left:5370px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st5" style="left:5490px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st6" style="left:4890px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st7" style="left:5010px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st8" style="left:5130px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st9" style="left:5250px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st10" style="left:5370px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="staff" id="st11" style="left:5490px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
-    <div class="hand" id="h4" style="left:4880px;top:1120px">2025 &middot; 12 staff on payroll</div>
-    <div class="line" id="l4" style="left:4870px;top:1230px">The UK arm is <span class="hl t"><i></i>the biggest.</span></div>
-    <div class="cut" id="mega5" style="left:7040px;top:430px;width:260px"><img src="assets/illustrations/megaphone.svg" alt=""></div>
-    <div class="barlbl" id="bl5a" style="left:6480px;top:700px">Income</div>
-    <div class="bar" id="bar5a" style="left:6480px;top:750px;width:52px;background:#16867E"></div>
-    <div class="barlbl" id="bv5a" style="left:6550px;top:760px">+6%</div>
-    <div class="barlbl" id="bl5b" style="left:6480px;top:860px">Cost of raising money</div>
-    <div class="bar" id="bar5b" style="left:6480px;top:910px;width:720px;background:#C8342A"></div>
-    <div class="barlbl" id="bv5b" style="left:7220px;top:920px;color:#C8342A">+83%</div>
-    <div class="hand" id="h5" style="left:6480px;top:1120px">UK &middot; 2023 to 2025</div>
-    <div class="line" id="l5" style="left:6470px;top:1230px">Fundraising costs <span class="hl r"><i></i>+83%.</span></div>
-    <div class="badge us" id="bd6" style="left:8080px;top:420px">USA</div>
-    <div class="cut" id="gov6" style="left:8200px;top:540px;width:380px"><img src="assets/illustrations/government.svg" alt=""></div>
-    <div class="cut" id="q6" style="left:8560px;top:480px;width:200px"><img src="assets/illustrations/question.svg" alt=""></div>
-    <div class="small" id="sm6" style="left:8150px;top:960px;width:780px;font-size:30px">$230,172 of $230,176 raised in 2024</div>
-    <div class="hand" id="h6" style="left:8080px;top:1120px">no government is named</div>
-    <div class="line" id="l6" style="left:8070px;top:1230px">Booked as <span class="hl"><i></i>government grants.</span></div>
-    <div class="badge us" id="bd7" style="left:9680px;top:420px">USA</div>
-    <div class="cut" id="bag7" style="left:9720px;top:620px;width:240px"><img src="assets/illustrations/money-bag.svg" alt=""></div>
-    <div class="cut" id="notes7" style="left:10300px;top:660px;width:230px"><img src="assets/illustrations/money-wings.svg" alt=""></div>
-    <div class="beam" id="beam7" style="left:9730px;top:910px;width:800px"></div>
-    <div class="cut" id="piv7" style="left:10075px;top:885px;width:110px"><img src="assets/illustrations/scale.svg" alt=""></div>
-    <div class="name" id="n7a" style="left:9700px;top:1020px;font-size:26px">Given &middot; $120,559</div>
-    <div class="name" id="n7b" style="left:10160px;top:1020px;font-size:26px">Wages &middot; $130,794</div>
-    <div class="hand" id="h7" style="left:9680px;top:1120px">2025 &middot; savings fell $70,826</div>
-    <div class="line" id="l7" style="left:9670px;top:1230px">Wages beat <span class="hl r"><i></i>donations.</span></div>
-    <div class="badge ca" id="bd8" style="left:11280px;top:420px">CANADA</div>
-    <div class="cut" id="maple8" style="left:11280px;top:520px;width:170px"><img src="assets/illustrations/maple-leaf.svg" alt=""></div>
-    <div class="big" id="n8" style="left:11490px;top:520px;font-size:230px">95&cent;</div>
-    <div class="cut" id="door8" style="left:11530px;top:790px;width:170px"><img src="assets/illustrations/door.svg" alt=""></div>
-    <div class="cut" id="who8" style="left:11720px;top:830px;width:150px"><img src="assets/illustrations/unknown-people.svg" alt=""></div>
-    <div class="cut" id="q8" style="left:11840px;top:760px;width:90px"><img src="assets/illustrations/question.svg" alt=""></div>
-    <div class="hand r" id="h8" style="left:11280px;top:1120px">of every $1 spent &middot; 2024</div>
-    <div class="line" id="l8" style="left:11270px;top:1230px">To consultants it <span class="hl r"><i></i>doesn&rsquo;t name.</span></div>
-    <div class="logo" id="lg9" style="left:13240px;top:420px;width:200px"><img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo (shown to identify the brand; not affiliated)"></div>
-    <div class="tag" id="t9" style="left:13210px;top:640px;font-size:18px">Not affiliated</div>
-    <svg class="links" id="lk9" style="position:absolute;left:12800px;top:700px;width:1080px;height:420px;overflow:visible" viewBox="0 0 1080 420"><path d="M250 110 L830 110"/><path d="M250 150 L540 330"/><path d="M830 150 L540 330"/></svg>
-    <div class="cut" id="c9" style="left:12940px;top:700px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
-    <div class="badge ca" id="bc9" style="left:12950px;top:900px;font-size:22px">CA</div>
-    <div class="cut" id="u9" style="left:13560px;top:700px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
-    <div class="badge uk" id="bu9" style="left:13570px;top:900px;font-size:22px">UK</div>
-    <div class="cut" id="s9" style="left:13250px;top:930px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
-    <div class="badge us" id="bs9" style="left:13390px;top:1010px;font-size:22px">US</div>
-    <div class="cut" id="q9a" style="left:13300px;top:720px;width:90px"><img src="assets/illustrations/question.svg" alt=""></div>
-    <div class="hand" id="h9" style="left:12880px;top:1120px">only they can say</div>
-    <div class="line" id="l9" style="left:12870px;top:1230px">Money between them? <span class="hl t"><i></i>Not shown.</span></div>
-    <div class="end" id="end2" style="left:14500px;top:400px;width:880px">
+    <div class="card" id="e13" style="left:3260px;top:380px;width:960px;height:240px"><img src="assets/reel2/logos/e13-banner.png" alt="Everythings 13 logo (shown to identify; not affiliated)"></div>
+    <div class="tag" id="t2b" style="left:3540px;top:640px">Not affiliated &middot; shown to identify</div>
+    <svg class="brk" id="brk" style="position:absolute;left:3200px;top:690px;width:1080px;height:90px;overflow:visible" viewBox="0 0 1080 90"><path d="M175 80 L175 50 Q175 30 205 30 L510 30 Q540 30 540 6 Q540 30 570 30 L875 30 Q905 30 905 50 L905 80"/></svg>
+    <div class="card" id="p0" style="left:3290px;top:790px;width:430px;height:150px;padding:12px"><img src="assets/reel2/logos/proj-bos.png" alt="Basics of Sikhi logo"></div>
+    <div class="card" id="p1" style="left:3760px;top:790px;width:430px;height:150px;padding:12px"><img src="assets/reel2/logos/proj-sikhpa.png" alt="Sikh Press Association logo"></div>
+    <div class="card" id="p2" style="left:3290px;top:965px;width:430px;height:150px;padding:12px"><img src="assets/reel2/logos/proj-kiddie.png" alt="Kiddie Sangat logo"></div>
+    <div class="card" id="p3" style="left:3760px;top:965px;width:430px;height:150px;padding:12px"><img src="assets/reel2/logos/proj-mighty.png" alt="Mighty Khalsa logo"></div>
+    <div class="hand" id="h2b" style="left:3280px;top:1130px;font-size:48px">listed in its own US tax return</div>
+    <div class="line" id="l2b" style="left:3270px;top:1230px">One banner. <span class="hl"><i></i>Four projects.</span></div>
+    <div class="flag" id="f30" style="left:4930px;top:470px;width:120px"><img src="assets/reel2/flags/ca.svg" alt=""></div>
+    <div class="cut" id="g30" style="left:4890px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
+    <div class="cut" id="m30" style="left:5010px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
+    <div class="small" id="sm30" style="left:4850px;top:880px"><b style="color:#221E1B">CRA</b><br>Canada</div>
+    <div class="flag" id="f31" style="left:5250px;top:470px;width:120px"><img src="assets/reel2/flags/us.svg" alt=""></div>
+    <div class="cut" id="g31" style="left:5210px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
+    <div class="cut" id="m31" style="left:5330px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
+    <div class="small" id="sm31" style="left:5170px;top:880px"><b style="color:#221E1B">IRS</b><br>United States</div>
+    <div class="flag" id="f32" style="left:5570px;top:470px;width:120px"><img src="assets/reel2/flags/gb.svg" alt=""></div>
+    <div class="cut" id="g32" style="left:5530px;top:600px;width:220px"><img src="assets/illustrations/government.svg" alt=""></div>
+    <div class="cut" id="m32" style="left:5650px;top:560px;width:120px"><img src="assets/illustrations/magnifier.svg" alt=""></div>
+    <div class="small" id="sm32" style="left:5490px;top:880px"><b style="color:#221E1B">CHARITY COMM.</b><br>England &amp; Wales</div>
+    <div class="hand" id="h3" style="left:4880px;top:1120px">so we put all three side by side</div>
+    <div class="line" id="l3" style="left:4870px;top:1230px">No one sees <span class="hl r"><i></i>the whole picture.</span></div>
+    <div class="badge uk" id="bd4" style="left:6480px;top:420px"><img src="assets/reel2/flags/gb.svg" alt="">UK</div>
+    <div class="cut" id="bag4" style="left:6480px;top:520px;width:260px"><img src="assets/illustrations/money-bag.svg" alt=""></div>
+    <div class="big" id="n4" style="left:6780px;top:560px;font-size:190px;color:#16867E">&pound;623K</div>
+    <div class="staff" id="st0" style="left:6490px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st1" style="left:6610px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st2" style="left:6730px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st3" style="left:6850px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st4" style="left:6970px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st5" style="left:7090px;top:850px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st6" style="left:6490px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st7" style="left:6610px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st8" style="left:6730px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st9" style="left:6850px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st10" style="left:6970px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="staff" id="st11" style="left:7090px;top:950px"><img src="assets/illustrations/person-turban.svg" alt=""></div>
+    <div class="hand" id="h4" style="left:6480px;top:1120px">2025 &middot; 12 staff on payroll</div>
+    <div class="line" id="l4" style="left:6470px;top:1230px">The UK arm is <span class="hl t"><i></i>the biggest.</span></div>
+    <div class="cut" id="mega5" style="left:8640px;top:430px;width:260px"><img src="assets/illustrations/megaphone.svg" alt=""></div>
+    <div class="barlbl" id="bl5a" style="left:8080px;top:700px">Income</div>
+    <div class="bar" id="bar5a" style="left:8080px;top:750px;width:52px;background:#16867E"></div>
+    <div class="barlbl" id="bv5a" style="left:8150px;top:760px">+6%</div>
+    <div class="barlbl" id="bl5b" style="left:8080px;top:860px">Cost of raising money</div>
+    <div class="bar" id="bar5b" style="left:8080px;top:910px;width:720px;background:#C8342A"></div>
+    <div class="barlbl" id="bv5b" style="left:8820px;top:920px;color:#C8342A">+83%</div>
+    <div class="hand" id="h5" style="left:8080px;top:1120px">UK &middot; 2023 to 2025</div>
+    <div class="line" id="l5" style="left:8070px;top:1230px">Fundraising costs <span class="hl r"><i></i>+83%.</span></div>
+    <div class="badge us" id="bd6" style="left:9680px;top:420px"><img src="assets/reel2/flags/us.svg" alt="">USA</div>
+    <div class="cut" id="gov6" style="left:9800px;top:540px;width:380px"><img src="assets/illustrations/government.svg" alt=""></div>
+    <div class="cut" id="q6" style="left:10160px;top:480px;width:200px"><img src="assets/illustrations/question.svg" alt=""></div>
+    <div class="small" id="sm6" style="left:9750px;top:960px;width:780px;font-size:30px">$230,172 of $230,176 raised in 2024</div>
+    <div class="hand" id="h6" style="left:9680px;top:1120px">no government is named</div>
+    <div class="line" id="l6" style="left:9670px;top:1230px">Booked as <span class="hl"><i></i>government grants.</span></div>
+    <div class="badge us" id="bd7" style="left:11280px;top:420px"><img src="assets/reel2/flags/us.svg" alt="">USA</div>
+    <div class="cut" id="bag7" style="left:11320px;top:620px;width:240px"><img src="assets/illustrations/money-bag.svg" alt=""></div>
+    <div class="cut" id="notes7" style="left:11900px;top:660px;width:230px"><img src="assets/illustrations/money-wings.svg" alt=""></div>
+    <div class="beam" id="beam7" style="left:11330px;top:910px;width:800px"></div>
+    <div class="cut" id="piv7" style="left:11675px;top:885px;width:110px"><img src="assets/illustrations/scale.svg" alt=""></div>
+    <div class="name" id="n7a" style="left:11300px;top:1020px;font-size:26px">Given &middot; $120,559</div>
+    <div class="name" id="n7b" style="left:11760px;top:1020px;font-size:26px">Wages &middot; $130,794</div>
+    <div class="hand" id="h7" style="left:11280px;top:1120px">2025 &middot; savings fell $70,826</div>
+    <div class="line" id="l7" style="left:11270px;top:1230px">Wages beat <span class="hl r"><i></i>donations.</span></div>
+    <div class="badge ca" id="bd8" style="left:12880px;top:420px"><img src="assets/reel2/flags/ca.svg" alt="">CANADA</div>
+    <div class="cut" id="maple8" style="left:12880px;top:520px;width:170px"><img src="assets/illustrations/maple-leaf.svg" alt=""></div>
+    <div class="big" id="n8" style="left:13090px;top:520px;font-size:230px">95&cent;</div>
+    <div class="cut" id="door8" style="left:13130px;top:790px;width:170px"><img src="assets/illustrations/door.svg" alt=""></div>
+    <div class="cut" id="who8" style="left:13320px;top:830px;width:150px"><img src="assets/illustrations/unknown-people.svg" alt=""></div>
+    <div class="cut" id="q8" style="left:13440px;top:760px;width:90px"><img src="assets/illustrations/question.svg" alt=""></div>
+    <div class="hand r" id="h8" style="left:12880px;top:1120px">of every $1 spent &middot; 2024</div>
+    <div class="line" id="l8" style="left:12870px;top:1230px">To consultants it <span class="hl r"><i></i>doesn&rsquo;t name.</span></div>
+    <div class="logo" id="lg9" style="left:14840px;top:420px;width:200px"><img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo (shown to identify the brand; not affiliated)"></div>
+    <div class="tag" id="t9" style="left:14810px;top:640px;font-size:18px">Not affiliated</div>
+    <svg class="links" id="lk9" style="position:absolute;left:14400px;top:700px;width:1080px;height:420px;overflow:visible" viewBox="0 0 1080 420"><path d="M250 110 L830 110"/><path d="M250 150 L540 330"/><path d="M830 150 L540 330"/></svg>
+    <div class="cut" id="c9" style="left:14540px;top:700px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge ca" id="bc9" style="left:14550px;top:900px;font-size:22px">CA</div>
+    <div class="cut" id="u9" style="left:15160px;top:700px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge uk" id="bu9" style="left:15170px;top:900px;font-size:22px">UK</div>
+    <div class="cut" id="s9" style="left:14850px;top:930px;width:180px"><img src="assets/illustrations/office.svg" alt=""></div>
+    <div class="badge us" id="bs9" style="left:14990px;top:1010px;font-size:22px">US</div>
+    <div class="cut" id="q9a" style="left:14900px;top:720px;width:90px"><img src="assets/illustrations/question.svg" alt=""></div>
+    <div class="hand" id="h9" style="left:14480px;top:1120px">only they can say</div>
+    <div class="line" id="l9" style="left:14470px;top:1230px">Money between them? <span class="hl t"><i></i>Not shown.</span></div>
+    <div class="end" id="end2" style="left:16100px;top:400px;width:880px">
       <div class="name" style="position:static;opacity:1;font-size:30px">The brand this video is about</div>
       <div style="position:relative;width:340px;margin:30px auto 0">
         <img src="assets/reel/bos-logo.png" alt="Basics of Sikhi logo" style="display:block;width:340px;border-radius:24px;box-shadow:0 20px 34px rgba(34,30,27,.25)">
@@ -186,7 +208,7 @@ html,body{margin:0;height:100%;background:#120f0d;overflow:hidden}
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const W=1080,H=1920;
 /* scene start times; tuned to the voiceover script (see assets/reel/script.txt) */
-const T=[0.0, 6.47, 14.17, 22.39, 30.27, 36.6, 45.53, 53.31, 60.56, 67.91, 74.38];const DUR=T[T.length-1];
+const T=[0.0, 6.47, 14.17, 25.12, 31.42, 39.3, 45.63, 54.56, 62.34, 69.59, 76.79, 83.26];const DUR=T[T.length-1];
 function fit(){const s=Math.min(innerWidth/W,innerHeight/H);$('#stage').style.transform=`translate(-50%,-50%) scale(${s})`;}
 addEventListener('resize',fit);fit();
 
@@ -238,52 +260,56 @@ const go=(k)=>{into(T[k]+.6,CX(k)-340,900,1.4);settle(T[k]+.6,CX(k),880,1.4);hom
 /* S1 one name */
 tl.set(C,{x:540,y:760,z:1.5,onUpdate:applyCam},0);
 tl.fromTo('#g1',{opacity:0,y:40},{opacity:1,y:0,duration:1.2,ease:'power2.out'},.2);
-popIn('#lg1',.3,.8);label('#t1',1.4);home(1.0,CX(0));scene(0,{line:'#l1',hand:'#h1'});out(['#g1','#t1'],T[1]-.6);
+popIn('#lg1',.3,.8);['#f1a','#f1b','#f1c'].forEach((f,j)=>popIn(f,2.2+j*.35,.5));label('#t1',1.4);home(1.0,CX(0));scene(0,{line:'#l1',hand:'#h1'});out(['#g1','#t1'],T[1]-.6);
 /* S2 three bodies */
 go(1);popIn('#lg2',T[1]+.7);draw('#lk2',T[1]+1.1,.9);
 [0,1,2].forEach(j=>{fly('#b2'+j,T[1]+1.3+j*.25,{from:{x:0,y:300,rotate:6-j*6,scale:.9},float:false});popIn('#bd2'+j,T[1]+1.9+j*.25);label('#sm2'+j,T[1]+2.4+j*.25);});
 scene(1,{line:'#l2'});
+/* S2b projects under the Everythings 13 banner */
+go(2);popIn('#e13',T[2]+.7,.7);label('#t2b',T[2]+1.4);draw('#brk',T[2]+1.8,.9);
+['#p0','#p1','#p2','#p3'].forEach((p,j)=>popIn(p,T[2]+4.6+j*1.3,.55));
+scene(2,{line:'#l2b',hand:'#h2b'});
 /* S3 regulators */
-go(2);[0,1,2].forEach(j=>{fly('#g3'+j,T[2]+.8+j*.25,{from:{x:0,y:300,rotate:0,scale:.9},float:false});fly('#m3'+j,T[2]+1.5+j*.25,{from:{x:200,y:-200,rotate:20,scale:.6}});label('#sm3'+j,T[2]+1.9+j*.25);});
-scene(2,{line:'#l3',hand:'#h3'});
+go(3);[0,1,2].forEach(j=>{popIn('#f3'+j,T[3]+1.2+j*.25);fly('#g3'+j,T[3]+.8+j*.25,{from:{x:0,y:300,rotate:0,scale:.9},float:false});fly('#m3'+j,T[3]+1.5+j*.25,{from:{x:200,y:-200,rotate:20,scale:.6}});label('#sm3'+j,T[3]+1.9+j*.25);});
+scene(3,{line:'#l3',hand:'#h3'});
 /* S4 UK biggest */
-go(3);popIn('#bd4',T[3]+.8);fly('#bag4',T[3]+1.0,{from:{x:-300,y:0,rotate:-8,scale:.9}});
-tl.fromTo('#n4',{opacity:0,scale:.7},{opacity:1,scale:1,duration:.6,ease:'back.out(1.6)'},T[3]+1.3);
-for(let j=0;j<12;j++)popIn('#st'+j,T[3]+2.0+j*.07,.4);
-scene(3,{line:'#l4',hand:'#h4'});
+go(4);popIn('#bd4',T[4]+.8);fly('#bag4',T[4]+1.0,{from:{x:-300,y:0,rotate:-8,scale:.9}});
+tl.fromTo('#n4',{opacity:0,scale:.7},{opacity:1,scale:1,duration:.6,ease:'back.out(1.6)'},T[4]+1.3);
+for(let j=0;j<12;j++)popIn('#st'+j,T[4]+2.0+j*.07,.4);
+scene(4,{line:'#l4',hand:'#h4'});
 /* S5 fundraising */
-go(4);fly('#mega5',T[4]+.8,{from:{x:300,y:0,rotate:10,scale:.8}});
-label('#bl5a',T[4]+1.2);tl.fromTo('#bar5a',{opacity:1,scaleX:0},{opacity:1,scaleX:1,duration:.8,ease:'power3.out',immediateRender:false},T[4]+1.4);label('#bv5a',T[4]+2.1);
-label('#bl5b',T[4]+2.4);tl.fromTo('#bar5b',{opacity:1,scaleX:0},{opacity:1,scaleX:1,duration:1.6,ease:'power2.out',immediateRender:false},T[4]+2.6);label('#bv5b',T[4]+4.0);
+go(5);fly('#mega5',T[5]+.8,{from:{x:300,y:0,rotate:10,scale:.8}});
+label('#bl5a',T[5]+1.2);tl.fromTo('#bar5a',{opacity:1,scaleX:0},{opacity:1,scaleX:1,duration:.8,ease:'power3.out',immediateRender:false},T[5]+1.4);label('#bv5a',T[5]+2.1);
+label('#bl5b',T[5]+2.4);tl.fromTo('#bar5b',{opacity:1,scaleX:0},{opacity:1,scaleX:1,duration:1.6,ease:'power2.out',immediateRender:false},T[5]+2.6);label('#bv5b',T[5]+4.0);
 tl.set(['#bar5a','#bar5b'],{opacity:0},0);
-scene(4,{line:'#l5',hand:'#h5'});
+scene(5,{line:'#l5',hand:'#h5'});
 /* S6 US grants */
-go(5);popIn('#bd6',T[5]+.8);fly('#gov6',T[5]+1.0,{from:{x:0,y:300,rotate:0,scale:.9},float:false});fly('#q6',T[5]+1.6,{from:{x:200,y:-300,rotate:-20,scale:.6}});label('#sm6',T[5]+2.2);
-scene(5,{line:'#l6',hand:'#h6'});
+go(6);popIn('#bd6',T[6]+.8);fly('#gov6',T[6]+1.0,{from:{x:0,y:300,rotate:0,scale:.9},float:false});fly('#q6',T[6]+1.6,{from:{x:200,y:-300,rotate:-20,scale:.6}});label('#sm6',T[6]+2.2);
+scene(6,{line:'#l6',hand:'#h6'});
 /* S7 US wages */
-go(6);popIn('#bd7',T[6]+.8);
-tl.fromTo('#beam7',{opacity:0,scaleX:0},{opacity:1,scaleX:1,duration:.8,ease:'power3.out'},T[6]+.8);
-fly('#piv7',T[6]+1.0,{from:{x:0,y:300,rotate:0,scale:.8},float:false});
-fly('#bag7',T[6]+1.2,{from:{x:-400,y:0,rotate:-8,scale:.9},float:false});
-fly('#notes7',T[6]+1.5,{from:{x:400,y:0,rotate:8,scale:.9},float:false});
-tl.to('#beam7',{rotate:3,duration:1.2,ease:'elastic.out(1,.5)'},T[6]+2.8);tl.to('#bag7',{y:-26,duration:1.2,ease:'elastic.out(1,.5)'},T[6]+2.8);tl.to('#notes7',{y:26,duration:1.2,ease:'elastic.out(1,.5)'},T[6]+2.8);
-scene(6,{line:'#l7',hand:'#h7',names:['#n7a','#n7b']});
+go(7);popIn('#bd7',T[7]+.8);
+tl.fromTo('#beam7',{opacity:0,scaleX:0},{opacity:1,scaleX:1,duration:.8,ease:'power3.out'},T[7]+.8);
+fly('#piv7',T[7]+1.0,{from:{x:0,y:300,rotate:0,scale:.8},float:false});
+fly('#bag7',T[7]+1.2,{from:{x:-400,y:0,rotate:-8,scale:.9},float:false});
+fly('#notes7',T[7]+1.5,{from:{x:400,y:0,rotate:8,scale:.9},float:false});
+tl.to('#beam7',{rotate:3,duration:1.2,ease:'elastic.out(1,.5)'},T[7]+2.8);tl.to('#bag7',{y:-26,duration:1.2,ease:'elastic.out(1,.5)'},T[7]+2.8);tl.to('#notes7',{y:26,duration:1.2,ease:'elastic.out(1,.5)'},T[7]+2.8);
+scene(7,{line:'#l7',hand:'#h7',names:['#n7a','#n7b']});
 /* S8 Canada */
-go(7);popIn('#bd8',T[7]+.8);fly('#maple8',T[7]+1.0,{from:{x:0,y:-300,rotate:-20,scale:.8}});
-const n8=$('#n8'),cv={v:0};tl.fromTo(n8,{opacity:0,scale:.7},{opacity:1,scale:1,duration:.5,ease:'back.out(1.6)'},T[7]+1.2);
-tl.fromTo(cv,{v:0},{v:95,duration:1.6,ease:'power2.out',onUpdate(){n8.textContent=Math.round(cv.v)+'¢';}},T[7]+1.4);
-fly('#door8',T[7]+1.8,{from:{x:300,y:0,rotate:-4,scale:.9},float:false});fly('#who8',T[7]+2.1,{from:{x:0,y:-300,rotate:8,scale:.8}});fly('#q8',T[7]+2.4,{from:{x:0,y:-200,rotate:-20,scale:.6}});
-scene(7,{line:'#l8',hand:'#h8'});
+go(8);popIn('#bd8',T[8]+.8);fly('#maple8',T[8]+1.0,{from:{x:0,y:-300,rotate:-20,scale:.8}});
+const n8=$('#n8'),cv={v:0};tl.fromTo(n8,{opacity:0,scale:.7},{opacity:1,scale:1,duration:.5,ease:'back.out(1.6)'},T[8]+1.2);
+tl.fromTo(cv,{v:0},{v:95,duration:1.6,ease:'power2.out',onUpdate(){n8.textContent=Math.round(cv.v)+'¢';}},T[8]+1.4);
+fly('#door8',T[8]+1.8,{from:{x:300,y:0,rotate:-4,scale:.9},float:false});fly('#who8',T[8]+2.1,{from:{x:0,y:-300,rotate:8,scale:.8}});fly('#q8',T[8]+2.4,{from:{x:0,y:-200,rotate:-20,scale:.6}});
+scene(8,{line:'#l8',hand:'#h8'});
 /* S9 gap */
-go(8);popIn('#lg9',T[8]+.8);label('#t9',T[8]+1.2);
-[['#c9','#bc9'],['#u9','#bu9'],['#s9','#bs9']].forEach(([a,b],j)=>{fly(a,T[8]+1.0+j*.25,{from:{x:0,y:300,rotate:0,scale:.9},float:false});popIn(b,T[8]+1.5+j*.25);});
-draw('#lk9',T[8]+2.0,1.0);fly('#q9a',T[8]+2.8,{from:{x:0,y:-200,rotate:-20,scale:.6}});
-scene(8,{line:'#l9',hand:'#h9'});
+go(9);popIn('#lg9',T[9]+.8);label('#t9',T[9]+1.2);
+[['#c9','#bc9'],['#u9','#bu9'],['#s9','#bs9']].forEach(([a,b],j)=>{fly(a,T[9]+1.0+j*.25,{from:{x:0,y:300,rotate:0,scale:.9},float:false});popIn(b,T[9]+1.5+j*.25);});
+draw('#lk9',T[9]+2.0,1.0);fly('#q9a',T[9]+2.8,{from:{x:0,y:-200,rotate:-20,scale:.6}});
+scene(9,{line:'#l9',hand:'#h9'});
 /* S10 disclaimer */
-into(T[9]+.6,CX(9)-340,900,1.3);settle(T[9]+.6,CX(9),960,1.3);
-tl.fromTo('#end2',{opacity:0,y:80},{opacity:1,y:0,duration:.9,ease:'power3.out'},T[9]+.6);
-tl.fromTo('#stamp',{opacity:0,scale:2.4},{opacity:1,scale:1,duration:.45,ease:'back.out(2)'},T[9]+1.5);
-home(T[9]+1.3,CX(9));breath(T[9]+2.3,DUR,1.03);
+into(T[10]+.6,CX(10)-340,900,1.3);settle(T[10]+.6,CX(10),960,1.3);
+tl.fromTo('#end2',{opacity:0,y:80},{opacity:1,y:0,duration:.9,ease:'power3.out'},T[10]+.6);
+tl.fromTo('#stamp',{opacity:0,scale:2.4},{opacity:1,scale:1,duration:.45,ease:'back.out(2)'},T[10]+1.5);
+home(T[10]+1.3,CX(10));breath(T[10]+2.3,DUR,1.03);
 tl.to({},{duration:.01},DUR);
 
 /* playback: autoplay + loop; R restart, Space pause; ?debug=1 scrub; ?safe=1 shows Instagram UI zones; ?clean=1 holds for export */
