@@ -6,6 +6,7 @@
 <title>November 1 post | The Sangat's Ledger (independent, not affiliated)</title>
 <style>
 @font-face{font-family:"Bricolage Grotesque";font-weight:700;src:url(assets/fonts/bricolage-grotesque-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Noto Sans Gurmukhi";font-weight:700;src:url(assets/fonts/noto-sans-gurmukhi-gurmukhi-700-normal.woff2) format("woff2")}
 @font-face{font-family:"Bricolage Grotesque";font-weight:800;src:url(assets/fonts/bricolage-grotesque-latin-800-normal.woff2) format("woff2")}
 :root{--paper:#F4E9D3;--ink:#1b1714;--red:#C8342A;--amber:#D98E04;--teal:#16867E;--muted:rgba(244,233,211,.66)}
 *{box-sizing:border-box}
@@ -14,31 +15,42 @@ body{margin:0;background:#333;display:flex;justify-content:center;padding:30px 0
 #post::before{content:"";position:absolute;inset:0;opacity:.18;mix-blend-mode:screen;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
 #post>*{position:relative}
 .kicker{font:800 22px/1 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#f0a39e}
-h1{font-weight:800;font-size:70px;line-height:1;letter-spacing:-.025em;margin:16px 0 0}
+h1{font-weight:800;font-size:62px;line-height:1;letter-spacing:-.025em;margin:16px 0 0}
 h1 span{color:#f0a39e}
 .sub{font:600 24px/1.32 system-ui,sans-serif;color:var(--muted);margin:12px 0 0}
-.panels{display:flex;flex-direction:column;gap:14px;margin-top:22px}
+.panels{display:flex;flex-direction:column;gap:12px;margin-top:18px}
 .panel{display:grid;grid-template-columns:330px 1fr;gap:24px;background:#221e1a;border-radius:20px;overflow:hidden;border-left:10px solid var(--c)}
-.panel .pic{position:relative;height:250px;background:#fff}
+.panel .pic{position:relative;height:204px;background:#fff}
 .panel .pic img.photo{width:100%;height:100%;object-fit:cover;display:block}
 .panel .pic .logo{position:absolute;right:10px;bottom:10px;width:120px;background:#fff;border-radius:10px;padding:6px;box-shadow:0 6px 14px rgba(0,0,0,.35)}
-.panel .txt{padding:18px 24px 16px 0}
-.status{display:inline-block;font:800 20px/1 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#141210;background:var(--c);padding:9px 14px;border-radius:8px}
-.panel h2{font-weight:800;font-size:36px;line-height:1.05;margin:10px 0 0}
-.panel p{font:600 21px/1.36 system-ui,sans-serif;margin:8px 0 0;color:rgba(244,233,211,.88)}
+.panel .txt{padding:14px 22px 12px 0}
+.status{display:inline-block;font:800 17px/1 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#141210;background:var(--c);padding:9px 14px;border-radius:8px}
+.panel h2{font-weight:800;font-size:32px;line-height:1.05;margin:8px 0 0}
+.panel p{font:600 19.5px/1.33 system-ui,sans-serif;margin:6px 0 0;color:rgba(244,233,211,.88)}
 .panel p b{color:#fff}
 .panel .src{font:600 16px/1.3 system-ui,sans-serif;color:rgba(244,233,211,.5);margin-top:8px}
-#post>.foot{position:static;margin-top:26px}
-.foot .big{font-weight:800;font-size:34px;line-height:1.15}
+#post>.foot{position:static;margin-top:18px}
+.foot .big{font-weight:800;font-size:30px;line-height:1.15}
 .foot .big span{color:#f0a39e}
 .foot .fine{font:600 16px/1.35 system-ui,sans-serif;color:rgba(244,233,211,.55);margin-top:10px}
+.shabad{margin-top:16px;padding:12px 20px;border-radius:16px;background:linear-gradient(90deg,rgba(217,142,4,.18),rgba(217,142,4,.04));border-left:6px solid var(--amber)}
+.shabad .gm{font:700 34px/1.3 "Noto Sans Gurmukhi",sans-serif;color:#f6c560}
+.shabad .tr{font:italic 600 21px/1.3 system-ui,sans-serif;color:rgba(244,233,211,.8);margin-top:4px}
+.shabad .en{font:600 19px/1.3 system-ui,sans-serif;color:#fff;margin-top:4px}
+.shabad .ref{font:600 15px/1.3 system-ui,sans-serif;color:rgba(244,233,211,.5);margin-top:4px}
 </style>
 </head>
 <body>
 <section id="post">
   <div class="kicker">November 1984 &rarr; November 2026</div>
   <h1>Who checks the people who <span>speak for the Sangat?</span></h1>
-  <p class="sub">Our community rebuilt after 1984 on seva. Seva runs on trust. Three cases, three very different stages &mdash; and one question.</p>
+  <p class="sub" style="font-size:22px">Our community rebuilt after 1984 on seva. Seva runs on trust. Three cases, one standard.</p>
+  <div class="shabad">
+    <div class="gm">ਹਕੁ ਪਰਾਇਆ ਨਾਨਕਾ ਉਸੁ ਸੂਅਰ ਉਸੁ ਗਾਇ ॥</div>
+    <div class="tr">Hak paraaiaa naanakaa us sooar us gaae.</div>
+    <div class="en">To take what rightfully belongs to another is like a Muslim eating pork, or a Hindu eating beef.</div>
+    <div class="ref">Guru Nanak Dev Ji &middot; Sri Guru Granth Sahib, Ang 141</div>
+  </div>
 
   <div class="panels">
     <div class="panel" style="--c:var(--red)">
@@ -66,8 +78,8 @@ h1 span{color:#f0a39e}
       <div class="txt">
         <span class="status">Unanswered &middot; no charges, no findings</span>
         <h2>Basics of Sikhi</h2>
-        <p>In 2024, <b>95&cent; of every $1</b> its Canadian charity spent went to consultants it doesn't name. It hasn't reported program spending <b>since 2021</b>. When people asked, the posts were deleted.</p>
-        <div class="src">Source: CRA T3010 returns, BN 752991695RR0001. No wrongdoing is alleged.</div>
+        <p>In 2024, <b>95&cent; of every $1</b> its Canadian charity spent went to consultants it doesn't name. It hasn't reported program spending <b>since 2021</b>. When people asked, the posts were deleted. Its board of directors signs these returns.</p>
+        <div class="src">Source: CRA T3010, BN 752991695RR0001. No wrongdoing alleged.</div>
       </div>
     </div>
   </div>
